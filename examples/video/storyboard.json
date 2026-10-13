@@ -1,0 +1,17 @@
+{
+  "status": "planning_example_not_final_narrated_video",
+  "canvas": [1920, 1080],
+  "fps": 30,
+  "target_seconds_range": [45, 60],
+  "timing_basis": "Provisional spans; replace with measured narration anchors",
+  "visual_identity": "Original illustrated campus world; consistent camera/characters; forest/cream/marigold/blue",
+  "scenes": [
+    {"id":"hook","spoken_anchor":"A camera on your shelf","estimated_span":[0,7],"action":"Show the camera waiting; reveal a student needing it","on_screen_text":"A shelf. An afternoon.","continuity":"Same camera throughout"},
+    {"id":"concept","spoken_anchor":"CampusCart is a concept","estimated_span":[7,13],"action":"Reveal the brand and a campus connection","on_screen_text":"FICTIONAL CONCEPT","continuity":"Preserve the campus identity"},
+    {"id":"find","spoken_anchor":"First, find an item","estimated_span":[13,22],"action":"Highlight a conceptual item listing and availability","on_screen_text":"1  FIND","continuity":"Concept UI labeled; not a real screenshot"},
+    {"id":"borrow","spoken_anchor":"Then, agree a handoff","estimated_span":[22,34],"action":"Dates selected; same camera handed to borrower","on_screen_text":"2  BORROW","continuity":"Object moves owner to borrower"},
+    {"id":"return","spoken_anchor":"Use it for the day","estimated_span":[34,42],"action":"Camera used briefly then returned","on_screen_text":"3  RETURN","continuity":"Same object returned to its owner"},
+    {"id":"recovery","spoken_anchor":"If an item is unavailable","estimated_span":[42,50],"action":"Show available alternative and date recovery","on_screen_text":"Clear next steps","continuity":"Do not imply real backend behavior"},
+    {"id":"close","spoken_anchor":"Borrow what you need","estimated_span":[50,57],"action":"Close on the shared campus scene and concise brand line","on_screen_text":"Borrow what you need. Share what you own.","continuity":"Maintain room for the final caption"}
+  ]
+}

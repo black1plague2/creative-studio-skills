@@ -1,0 +1,92 @@
+[
+  {
+    "name": "creative-director",
+    "description": "Turn a PRD, mixed source files, notes, or an incomplete creative brief into a scoped multi-artifact production plan. Use when deliverable selection, source fidelity, intake questions, or a shared creative direction must be resolved before specialized production.",
+    "path": "skills/creative-director/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "gpt-poster-slides",
+    "description": "Use GPT image generation to create complete 16:9 illustrated poster slides from a PRD, PPT, PDF, notes, or an idea, then package the approved images into a PDF or image-based PPTX. This workflow is GPT-specific; another AI may prepare its GPT handoff but must not silently replace the generation route.",
+    "path": "skills/gpt-poster-slides/SKILL.md",
+    "provider": "GPT"
+  },
+  {
+    "name": "poster-infographics",
+    "description": "Create illustrated posters, visual summaries, research posters, and technical infographic plates from source content. Use when the artifact is a single visual composition or print poster; route a multi-slide GPT deck to gpt-poster-slides.",
+    "path": "skills/poster-infographics/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "visual-assets",
+    "description": "Generate or art-direct original illustrations, photography, textures, character scenes, and supporting raster assets for a defined creative brief. Use when the visual asset itself is requested; use code/vector tools for exact icons, logos, and charts where appropriate.",
+    "path": "skills/visual-assets/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "brand-identity",
+    "description": "Create a coherent visual and verbal identity, palette, typography, motifs, asset treatment, and usage rules for a product or creative bundle. Use when a new identity or a consistent cross-artifact direction is requested, not for unrelated rebranding of an existing product.",
+    "path": "skills/brand-identity/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "website-frontends",
+    "description": "Design and implement responsive websites, landing pages, editorial web pages, and marketing front ends from product content and references. Use for functioning website surfaces; route authenticated task-focused products to app-interfaces.",
+    "path": "skills/website-frontends/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "app-interfaces",
+    "description": "Design or implement task-focused app UI, dashboards, onboarding, settings, forms, and product flows with coherent tokens and complete interaction states. Use for web/native product interfaces, not campaign-only art direction.",
+    "path": "skills/app-interfaces/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "editorial-pdf",
+    "description": "Create designed PDF reports, proposals, guides, booklets, and editorial documents from verified source content. Use for paginated reading/print documents; route GPT image-slide decks to gpt-poster-slides and editable Word documents to word-documents.",
+    "path": "skills/editorial-pdf/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "word-documents",
+    "description": "Create or edit structured, editable Word reports, proposals, memos, and forms from source material while preserving formatting and reviewing the rendered result. Use for DOCX deliverables rather than static slide images or PDF-only artwork.",
+    "path": "skills/word-documents/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "explainer-video",
+    "description": "Turn a PRD, deck, article, or notes into a concise illustrated/product explainer with a spoken script, storyboard, purposeful moving demonstrations, captions, and reviewed export. Use for linear narrated video; viewer-clickable experiences use interactive-explainers.",
+    "path": "skills/explainer-video/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "natural-voiceover",
+    "description": "Write, record or synthesize conversational narration with verified pronunciation, consistent voice identity, meaningful pauses, and an actual listening review. Use for voiceover/audio delivery, independently or as a dependency of an explainer video.",
+    "path": "skills/natural-voiceover/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "interactive-explainers",
+    "description": "Build explorable diagrams, simulations, clickable walkthroughs, learning activities, or branching video with meaningful viewer controls and feedback. Use when the reader/viewer changes the experience, not merely when a linear video is animated.",
+    "path": "skills/interactive-explainers/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "data-storytelling",
+    "description": "Turn source data or quantitative claims into faithful charts, tables, comparisons, and explanatory visual narratives. Use when evidence, encoding, units, scale choices or reproducible calculations matter; do not create decorative invented numbers.",
+    "path": "skills/data-storytelling/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "social-campaigns",
+    "description": "Create coordinated social posts, carousels, thumbnails, ads, and platform-sized creative variants from a real offer/message and content source. Use for campaign production and adaptation; publishing requires separate user authorization.",
+    "path": "skills/social-campaigns/SKILL.md",
+    "provider": "universal"
+  },
+  {
+    "name": "creative-copy",
+    "description": "Write or revise clear headlines, presentation copy, narration, UX text, campaign language and editorial descriptions grounded in supplied facts and audience needs. Use for substantive creative writing/editing, with medium-appropriate density and truthful claims.",
+    "path": "skills/creative-copy/SKILL.md",
+    "provider": "universal"
+  }
+]

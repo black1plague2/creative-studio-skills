@@ -1,0 +1,2 @@
+item_id,content_or_claim,source_location,status,qualification,intended_artifact,verification_note
+example-001,"A fictional campus borrowing concept","examples/campuscart/source-prd.md","illustrative","Not launched; no adoption data supplied","Concept poster","Example row; replace with real source content in a live task"

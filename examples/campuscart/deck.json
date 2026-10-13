@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "title": "CampusCart",
+  "aspect_ratio": "16:9",
+  "canvas_color": "#153F2B",
+  "slides": [
+    {
+      "id": "cover",
+      "image": "slides/01-cover.png",
+      "expected_text": ["CampusCart", "Borrow what you need. Share what you own.", "FICTIONAL CONCEPT"],
+      "reviewed": true,
+      "review_notes": "Visible title/tagline/footer and campus illustration inspected; fictional status explicit."
+    },
+    {
+      "id": "problem",
+      "image": "slides/02-problem.png",
+      "expected_text": ["Good things sit unused.", "Students need them for a day.", "FICTIONAL CONCEPT"],
+      "reviewed": true,
+      "review_notes": "Visible headline/support/footer inspected; coherent shelf-to-campus problem illustration."
+    },
+    {
+      "id": "workflow",
+      "image": "slides/03-workflow.png",
+      "expected_text": ["Find. Borrow. Return.", "1  FIND", "Choose an item.", "2  BORROW", "Agree the handoff.", "3  RETURN", "Bring it back.", "FICTIONAL CONCEPT"],
+      "reviewed": true,
+      "review_notes": "Three stage labels/captions inspected; camera handoff and return direction, recurring characters and visual identity checked."
+    }
+  ]
+}

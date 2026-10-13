@@ -1,0 +1,7 @@
+Create ONE finished presentation poster, exact landscape 16:9 composition, ideally 1920×1080 pixels. Use the attached CampusCart cover only as a STYLE AND CHARACTER reference. This is a NEW CONTENT SLIDE, not an edit of the cover. Preserve the original fictional campus world, deep forest-green/cream/marigold/sky-blue palette, strong black contour illustration, cut-paper shapes, warm paper texture, chunky expressive display type, and recognizably consistent adult student characters.
+
+Exact large headline: "Good things sit unused."
+Exact short supporting sentence: "Students need them for a day."
+Exact footer: "FICTIONAL CONCEPT"
+
+Show a split but visually integrated editorial illustration: on the left, a campus dorm shelf with an unused camera, books, and a bicycle helmet, clearly waiting; on the right, two adult university students preparing for a campus activity, one with an empty camera strap and the other holding a simple study notebook. Between them, one strong illustrated gesture/circulation path conveys the gap between unused objects and a student's need. Make this a thoughtful content-bearing illustrated poster with carefully balanced negative space and readable typography, not three feature cards or generic architecture boxes. No invented numerical data, brand logos, fake screenshots, text other than the three specified strings, or photorealism. Full bleed, no frame. Every letter must match the quoted text. The visual conveys an example problem, not surveyed evidence.
