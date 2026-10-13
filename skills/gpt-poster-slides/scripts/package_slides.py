@@ -49,7 +49,7 @@ def package(manifest,output_dir,formats=('pdf','pptx'),overwrite=False,allow_unr
             p.save(str(temp/(stem+'.pptx')))
         transcript=f"# {data['title']}\n\n"+('DRAFT: contains unreviewed images.\n\n' if draft else '')
         for i,s in enumerate(slides,1):transcript+=f"## Slide {i}: {s['id']}\n\n"+'\n\n'.join(s.get('expected_text',[]))+'\n\n'
-        (temp/(stem+'-transcript.md')).write_text(transcript,encoding='utf-8')
+        (temp/(stem+'-transcript.md')).write_text(transcript.rstrip()+'\n',encoding='utf-8')
         report={'title':data['title'],'draft':draft,'aspect_ratio':'16:9','slide_count':len(slides),'formats':list(formats),'order':[s['id'] for s in slides],'images':[{'id':s['id'],**s['image_check'],'path':s['image']} for s in slides],'outputs':names,'scope':'Mechanical packaging. Exact-copy, source and visual checks are review records, not independently proven by this script.'}
         (temp/(stem+'-packaging-report.json')).write_text(json.dumps(report,indent=2),encoding='utf-8')
         for name in names:os.replace(temp/name,out/name)
