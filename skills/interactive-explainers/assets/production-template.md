@@ -37,3 +37,8 @@ Controls are actual buttons, keyboard-operable, with visible focus and state fee
 Exercise every branch/control, state reset, back/replay/resume and meaningful consequence. Inspect long feedback/narrow layout/zoom. Check keyboard, focus return, feedback announcements where in scope, captions and motion alternative. Technical clickability is insufficient if both branches say the same thing.
 
 Implemented layer [fill/prototype/handoff]; actual control journey [evidence/not run]; accessibility checks [scope/not run]; fallback tested [evidence/not run]. Example above defines behavior, not a deployed activity.
+
+
+## UI example choice when this brief includes a new interface
+
+Offer three concrete same-content specimens with materially different structure/type/density/imagery for the user to choose. Preserve causal models, brand constraints and prior accepted choices; honor explicit opt-out or delegated selection. Record the actual preview and selected direction.

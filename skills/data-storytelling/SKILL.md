@@ -4,7 +4,7 @@ description: "Turn source data or quantitative claims into faithful charts, tabl
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Data storytelling

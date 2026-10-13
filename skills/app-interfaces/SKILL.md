@@ -4,7 +4,7 @@ description: "Design or implement task-focused app UI, dashboards, onboarding, s
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # App interfaces

@@ -4,7 +4,7 @@ description: "Write, record or synthesize conversational narration with verified
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Natural voiceover

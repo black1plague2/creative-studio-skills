@@ -4,7 +4,7 @@ description: "Write or revise clear headlines, presentation copy, narration, UX 
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Creative copy

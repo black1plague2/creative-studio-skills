@@ -4,7 +4,7 @@ description: "Create coordinated social posts, carousels, thumbnails, ads, and p
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Social campaigns

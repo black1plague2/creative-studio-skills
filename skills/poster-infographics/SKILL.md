@@ -4,7 +4,7 @@ description: "Create illustrated posters, visual summaries, research posters, an
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Posters and infographics

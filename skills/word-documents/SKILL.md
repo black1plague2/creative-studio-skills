@@ -4,7 +4,7 @@ description: "Create or edit structured, editable Word reports, proposals, memos
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Word documents

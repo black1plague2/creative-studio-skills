@@ -4,7 +4,7 @@ description: "Use GPT image generation to create complete 16:9 illustrated poste
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # GPT poster slides

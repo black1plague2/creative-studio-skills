@@ -4,7 +4,7 @@ description: "Create designed PDF reports, proposals, guides, booklets, and edit
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Editorial PDF

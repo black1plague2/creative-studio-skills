@@ -4,7 +4,7 @@ description: "Turn a PRD, deck, article, or notes into a concise illustrated/pro
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Explainer video

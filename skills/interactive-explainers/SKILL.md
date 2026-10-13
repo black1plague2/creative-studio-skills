@@ -4,7 +4,7 @@ description: "Build explorable diagrams, simulations, clickable walkthroughs, le
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Interactive explainers

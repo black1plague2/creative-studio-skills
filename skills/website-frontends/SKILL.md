@@ -4,7 +4,7 @@ description: "Design and implement responsive websites, landing pages, editorial
 license: MIT
 metadata:
   author: "black1plague2"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Website front ends

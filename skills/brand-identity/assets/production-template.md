@@ -33,3 +33,8 @@ Specimens to make and inspect: one title/keyframe composition, one portfolio cas
 ## Review/handoff
 
 Inspect actual specimens at intended scale, contrast, long title/credit lengths and narrow crop. Verify supplied text and rights. Deliver token rules, typography availability, asset treatment, source files and approved specimens if produced. Record produced specimens [actual or pending], rendered check [evidence or not run] and context-specific exceptions [fill]. This filled example is identity guidance, not a validated brand launch.
+
+
+## UI example choice when this brief includes a new interface
+
+Offer three concrete same-content specimens with materially different structure/type/density/imagery for the user to choose. Preserve causal models, brand constraints and prior accepted choices; honor explicit opt-out or delegated selection. Record the actual preview and selected direction.
