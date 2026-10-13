@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "path_base": "domains/index.json directory",
+  "example_status": "Original fictional exercises; not real projects or verified outcomes",
+  "domains": [
+    { "slug": "healthtech", "title": "Healthtech", "brief_path": "healthtech.md", "example": "VisitBridge" },
+    { "slug": "education", "title": "Education", "brief_path": "education.md", "example": "LanternLab" },
+    { "slug": "saas", "title": "SaaS", "brief_path": "saas.md", "example": "QueueDesk" },
+    { "slug": "fintech", "title": "Fintech", "brief_path": "fintech.md", "example": "PocketPlan" },
+    { "slug": "commerce", "title": "Commerce", "brief_path": "commerce.md", "example": "ClayNest" },
+    { "slug": "sustainability-energy", "title": "Sustainability and energy", "brief_path": "sustainability-energy.md", "example": "SunHarbor" },
+    { "slug": "civic-nonprofit", "title": "Civic and nonprofit", "brief_path": "civic-nonprofit.md", "example": "OpenBlock" },
+    { "slug": "hospitality", "title": "Hospitality", "brief_path": "hospitality.md", "example": "FernStay" },
+    { "slug": "creative-media", "title": "Creative portfolio and media", "brief_path": "creative-media.md", "example": "FrameKind" },
+    { "slug": "industrial-scientific", "title": "Industrial and scientific", "brief_path": "industrial-scientific.md", "example": "BenchTrace" },
+    { "slug": "personal-professional", "title": "Personal and professional", "brief_path": "personal-professional.md", "example": "Mira Rao" }
+  ],
+  "task_template_pattern": "../skills/{skill}/assets/production-template.md",
+  "skills": [
+    "creative-director",
+    "gpt-poster-slides",
+    "editorial-pdf",
+    "word-documents",
+    "poster-infographics",
+    "website-frontends",
+    "app-interfaces",
+    "explainer-video",
+    "natural-voiceover",
+    "interactive-explainers",
+    "brand-identity",
+    "visual-assets",
+    "creative-copy",
+    "social-campaigns",
+    "data-storytelling"
+  ],
+  "adaptation_groups": {
+    "brief-and-language": ["creative-director", "creative-copy"],
+    "slide-and-poster": ["gpt-poster-slides", "poster-infographics"],
+    "reading-documents": ["editorial-pdf", "word-documents"],
+    "website-and-app": ["website-frontends", "app-interfaces"],
+    "video-voice-and-interaction": ["explainer-video", "natural-voiceover", "interactive-explainers"],
+    "identity-assets-and-campaign": ["brand-identity", "visual-assets", "social-campaigns"],
+    "data-and-evidence": ["data-storytelling"]
+  },
+  "composition_count": 165,
+  "tested_workflow_count": null
+}

@@ -43,3 +43,13 @@ No voice generation/audition/listening comparison was performed. Voice instructi
 - A separate agent reviewed portability/publication contents and ran the existing mechanics tests. Findings about final validation documentation, packaging-report wording and required copy records were addressed. Repository-root verification is required before staging, so an ancestor checkout cannot include unrelated files.
 
 The agents are independent sessions, not an independent human panel or a cross-model reliability benchmark. Future evaluations can use [the behavior cases](evaluations/README.md) and actual artifacts to refine the library.
+
+## Research, domain and UI-choice expansion
+
+The complete supplied narrative report is archived with a historical/overriding-contract note and one disclosed local-link adaptation. The original 58-row CSV remains byte-for-byte unchanged. The coverage JSON maps every source to existing integration files and separates rule/workflow references from optional engines, creator practice and discovery-only material.
+
+Eleven domain packs and fifteen local editable production templates are indexed as 165 possible compositions. The validator checks the domain/skill sets, file paths, composition count and all-source mapping. This is coverage of reusable instructions, not 165 executed or certified creative workflows. An independent read-only agent verified the report/CSV incorporation, mapped files, domains/templates and absence of private reference assets; its optional-domain wording finding was addressed so installed skills do not require the full repo.
+
+The UI choice policy is an explicit user preference. The original chooser supplies three structurally distinct same-content care-portal specimens. Root inspected the desktop render and exercised selection, exclusive state, URL-fragment restoration after reload, switching direction and clear/reset with focus recovery. A 390-pixel DOM check showed three options/controls and no horizontal overflow. The narrow full-page screenshot could not be captured, so narrow visual inspection and real screen-reader checks are not claimed.
+
+The accepted Morrow Care patient portal is included as a runnable fictional example. Root inspected desktop rendering, missing-day/time booking recovery, valid local booking/loading/confirmation, updated appointment list and reset. No real provider was contacted. Other available actions are implementation examples; their exhaustive browser/device validation is not claimed. All source remains administrative/fictional rather than clinical guidance.

@@ -28,6 +28,12 @@ This is a practical instruction library, not model-weight training or a promise 
 
 Read [START_HERE.md](START_HERE.md) for the universal operating contract. Each skill has a concise entry point plus detailed local references, an intake guide, acceptance checks, and a worked example. **Read only what this task needs.**
 
+## Domain packs and reusable templates
+
+Choose a [domain pack](domains/README.md) for audience, evidence, tone, terminology and domain constraints, then the relevant skill and its local editable production template. This composition covers different industries without duplicating the same instructions in hundreds of files. A skill remains usable standalone with a user-provided domain brief.
+
+The packs cover healthtech, education, SaaS, fintech, commerce, sustainability/energy, civic/nonprofit, hospitality, creative/media, industrial/scientific and personal/professional work. They include original fictional briefs and task adaptations. They do not fabricate clinical, financial, legal, business or scientific evidence.
+
 ## Use with GPT / ChatGPT for presentations
 
 Give GPT this repository URL, your content, and this prompt:
@@ -102,6 +108,8 @@ The example above is an **AI-generated original fictional concept**. Its prompt,
 
 A coherent deck can be playful and sketch-like, culturally expressive, richly illustrated, or quietly editorial. Choose one direction for the subject and carry it through typography, palette, characters, image treatment, diagram vocabulary, and spacing. This library permits visually dense technical panels when that is what the audience needs. It does not impose a universal ban on cards, gradients, borders, serif fonts, or diagrams.
 
+**UI requests include a choice step:** show three concrete website/app/screen/component examples with the actual task content, then let the user choose a direction. The [interactive UI chooser](examples/ui-directions/README.md) demonstrates materially different layouts and hierarchy. Follow [the UI choice policy](docs/ui-choice-policy.md); preserve an accepted direction and honor an explicit request to skip options.
+
 Generic decoration is not enough. A visual should explain the subject or establish a meaningful atmosphere. A hardware slide can show an illustrated mechanism; a user-flow slide can show people and actions; a data slide needs a faithful chart. Relevant source facts survive the transformation.
 
 ![How source content becomes a creative artifact](docs/illustrations/production-flow.svg)
@@ -125,8 +133,11 @@ If missing facts would change the message, functionality, rights to a required a
 - [CampusCart PRD → generated poster images → PDF/PPTX](examples/campuscart/README.md)
 - [Video script, storyboard, timing, captions, and motion source](examples/video/README.md)
 - [Complete app-UI state example](examples/app-ui/README.md)
+- [Accepted healthtech patient portal](examples/healthtech-ui/README.md)
+- [Three concrete UI directions to choose from](examples/ui-directions/README.md)
 - [PDF/Word editorial treatment example](examples/documents/README.md)
 - [Universal brief, source ledger, review record, and handoff](templates/README.md)
+- [Domain-specific briefs and creative constraints](domains/README.md)
 - [Illustrated production and quality guides](docs/illustrations/README.md)
 - [Prompt recipes for common requests](docs/prompt-recipes.md)
 
@@ -158,6 +169,8 @@ python -m unittest discover -s tests -v
 ## Sources, ownership, and scope
 
 The production rules are original synthesis informed by **58 surveyed repositories**, published creator workflows, and standards. [SOURCES.md](SOURCES.md) identifies the most relevant references; [research/sources.csv](research/sources.csv) records the broader survey and its limitations. Upstream implementations were not copied into this repo. Public research references are not automatically cleared for redistribution.
+
+The [full research report](research/full-research-report.md) is now included, with historical recommendations clearly separated from the current GPT poster contract. [Coverage for all 58 sources](research/source-coverage.md) maps each source to adopted guidance, task templates, optional engine choices, or a deliberately limited reference/discovery role. [Import records](research/import-record.json) identify the supplied report/registry and the disclosed link adaptation.
 
 The instructions, original helpers, and original example assets in this repository are offered under [MIT](LICENSE), subject to the asset notes in [ASSET_PROVENANCE.md](ASSET_PROVENANCE.md). Third-party engines, voices, fonts, model weights, and supplied source content keep their own terms. Your source material is not automatically committed or published.
 

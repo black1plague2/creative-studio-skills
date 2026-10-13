@@ -7,6 +7,7 @@
 | CampusCart PDF/PPTX/contact sheet | Produced locally from the approved PNGs using original packaging helpers | Proportions preserved; native one-pixel dimension rounding documented |
 | Documentation SVGs and example motion source | Original code-native diagrams/assets | MIT; distinct from GPT poster generation |
 | App/document/video example records | Original fictional exercises and instructions | Conceptual or demonstrative status stated per example |
+| Morrow Care healthtech portal and three-direction chooser | Original HTML/CSS/JS and inline marks with fictional scheduling/administrative data | MIT; browser-local interactions, no real clinician/patient/service or clinical guidance |
 
 The poster images were inspected for key visible copy and composition. They are not labeled as human-made illustrations. The supplied user reference decks/video were inspected to understand broad preferences; their files, images, screenshots and personal content were not included here.
 

@@ -1,0 +1,8 @@
+{
+  "source_report_sha256": "be38e0c7f4ed0dfc61440ca626e45ba69a5ec1a5529f8a43ee919bced70ff240",
+  "source_registry_sha256": "ea055b2f9dfab73cc10a96801783a742429d52167facb45c0436068635c0c15a",
+  "report_incorporation": "Full text retained with one disclosed local-link adaptation and an overriding-contract/historical note.",
+  "registry_incorporation": "Exact byte-for-byte copy of supplied CSV.",
+  "source_count": 58,
+  "private_reference_assets_included": false
+}

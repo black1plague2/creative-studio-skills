@@ -1,0 +1,2551 @@
+{
+  "review_scope": "Independent local-source coverage inspection, snapshot during repo expansion. No upstream implementations copied or installed; no output-quality benchmark performed.",
+  "review_date": "2026-10-13",
+  "source_artifacts": [
+    "full-research-report.md",
+    "sources.csv"
+  ],
+  "existing_registry_matches_supplied_csv": true,
+  "source_count": 58,
+  "coverage": [
+    {
+      "repository": "anthropics/skills",
+      "category": "Presentations; Documents; PDF; Frontend",
+      "kind": "Agent skills",
+      "useful_findings": "Separate file integrity, content completeness, and rendered visual review; frontend guidance ties design to the subject.",
+      "audit_structure": "Validate package; extract text; inspect rendered pages or slides.",
+      "limitation": "Office skills have restrictive file-level licenses. Their aesthetic rules also differ from product-UI guidance.",
+      "recommendation": "Reference only for Office; assess frontend license separately",
+      "inspection": "Selected Office/frontend/canvas skills and file-level licenses inspected",
+      "source_url": "https://github.com/anthropics/skills/tree/main/skills",
+      "license_note": "Mixed; pptx/docx/pdf LICENSE.txt imposes restrictions; frontend-design Apache-2.0 license file inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Separate file integrity, content completeness, and rendered visual review; frontend guidance ties design to the subject. Review: Validate package; extract text; inspect rendered pages or slides.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "editorial-pdf",
+        "word-documents",
+        "website-frontends",
+        "poster-infographics"
+      ],
+      "existing_evidence": "quality.md; production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/word-documents/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/word-documents/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Cross-artifact review matrix with separate source, visual, interaction/audio and delivery gates; no copied Office code."
+    },
+    {
+      "repository": "openai/skills",
+      "category": "PDF; Presentations",
+      "kind": "Agent skills",
+      "useful_findings": "PDF workflow distinguishes extraction from layout review; historical slides source contains rendering and layout helpers.",
+      "audit_structure": "Render pages; inspect typography, clipping, figures, and page furniture.",
+      "limitation": "Current slides/doc raw paths returned 404; historical slides were inspected at a specific commit.",
+      "recommendation": "Use current PDF; historical slides are a reference",
+      "inspection": "Current PDF and historical slides read",
+      "source_url": "https://github.com/openai/skills/blob/main/skills/.curated/pdf/SKILL.md",
+      "license_note": "PDF Apache-2.0 license file; inspect other skills individually",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "PDF workflow distinguishes extraction from layout review; historical slides source contains rendering and layout helpers. Review: Render pages; inspect typography, clipping, figures, and page furniture.",
+      "relevant_existing_skills": [
+        "editorial-pdf",
+        "gpt-poster-slides"
+      ],
+      "existing_evidence": "production.md #8; quality-and-export.md",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/gpt-poster-slides/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "PDF intake checklist separating searchable, scanned/OCR and hybrid inputs, followed by page-by-page render evidence."
+    },
+    {
+      "repository": "JetBrains/skills",
+      "category": "Presentations; Documents",
+      "kind": "Curated/adapted skills",
+      "useful_findings": "Editable PPTX plus authoring JS; montage, overflow, and font-substitution helpers; DOCX render loop.",
+      "audit_structure": "Render; inspect; fix; deliver editable source.",
+      "limitation": "Slides metadata credits OpenAI; this is an adaptation, not an independent original workflow.",
+      "recommendation": "Strong technical candidate",
+      "inspection": "Slides and doc skills read",
+      "source_url": "https://github.com/JetBrains/skills/blob/main/slides/SKILL.md",
+      "license_note": "Slides frontmatter declares Apache-2.0; inspect bundled file notices",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Editable PPTX plus authoring JS; montage, overflow, and font-substitution helpers; DOCX render loop. Review: Render; inspect; fix; deliver editable source.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "word-documents"
+      ],
+      "existing_evidence": "quality-and-export.md; production.md #8-9",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/word-documents/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/word-documents/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Export comparison template including renderer, font changes, count/order, source versus final discrepancies and recheck."
+    },
+    {
+      "repository": "dachent/skills",
+      "category": "Presentations",
+      "kind": "Windows Office skills",
+      "useful_findings": "Define deck purpose and visual concept; use fewer stronger objects; inspect actual PowerPoint exports.",
+      "audit_structure": "Blocker/major/minor rubric covering message, hierarchy, alignment, contrast, charts, and rhythm.",
+      "limitation": "PowerPoint COM requires a working desktop Office installation; static density checks do not prove text fit.",
+      "recommendation": "Strong Windows candidate",
+      "inspection": "PPTX skill and design/QA references read",
+      "source_url": "https://github.com/dachent/skills/blob/main/pptx-win/references/visual-qa-rubric.md",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Define deck purpose and visual concept; use fewer stronger objects; inspect actual PowerPoint exports. Review: Blocker/major/minor rubric covering message, hierarchy, alignment, contrast, charts, and rhythm.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "creative-director"
+      ],
+      "existing_evidence": "quality.md; quality-and-export.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Deck review worksheet for message, focal point, exact labels, density, contrast and continuity with blocker/major/minor findings."
+    },
+    {
+      "repository": "zarazhangrui/frontend-slides",
+      "category": "Presentations",
+      "kind": "Visual HTML slide skill",
+      "useful_findings": "Three real-content style previews; distinguish speaker-led from reading-first decks; maintain fixed slide geometry.",
+      "audit_structure": "Screenshot checks for stage ratio, overflow, panel overlap, and density.",
+      "limitation": "HTML-first. Browser delivery and editable PowerPoint have different capabilities. Font bans are house style.",
+      "recommendation": "Strong art-direction candidate",
+      "inspection": "SKILL.md and style material inspected",
+      "source_url": "https://github.com/zarazhangrui/frontend-slides/blob/main/SKILL.md",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Three real-content style previews; distinguish speaker-led from reading-first decks; maintain fixed slide geometry. Review: Screenshot checks for stage ratio, overflow, panel overlap, and density.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "brand-identity"
+      ],
+      "existing_evidence": "gpt-workflow.md; art-direction.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Deck archetype template with spoken-pitch, technical-reading and educational modes; optional two/three directions when the brief is unresolved."
+    },
+    {
+      "repository": "nicobailon/visual-explainer",
+      "category": "Presentations; Visual explanation",
+      "kind": "HTML explanation skill",
+      "useful_findings": "Figure-led HTML; content-specific SVG, small multiples, tables, charts, and scene-based explanations.",
+      "audit_structure": "Rendered content, geometry, and delivery checks; static PPTX conversion has limitations.",
+      "limitation": "Its technical-diagram emphasis is not the default for your poster-like presentation style.",
+      "recommendation": "Optional for technical explanations",
+      "inspection": "Skill and README excerpts inspected",
+      "source_url": "https://github.com/nicobailon/visual-explainer/blob/main/plugins/visual-explainer/SKILL.md",
+      "license_note": "MIT",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Figure-led HTML; content-specific SVG, small multiples, tables, charts, and scene-based explanations. Review: Rendered content, geometry, and delivery checks; static PPTX conversion has limitations.",
+      "relevant_existing_skills": [
+        "interactive-explainers",
+        "poster-infographics",
+        "data-storytelling"
+      ],
+      "existing_evidence": "production.md",
+      "relevant_existing_files": [
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/interactive-explainers/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/data-storytelling/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/data-storytelling/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Visual explanation template for sequence/comparison/hierarchy/map with meaningful actors, labels and readable static alternative."
+    },
+    {
+      "repository": "nexu-io/open-design",
+      "category": "Presentations",
+      "kind": "Design workspace and export audit",
+      "useful_findings": "Compare source HTML with exported PPTX shapes and per-run typography.",
+      "audit_structure": "Extract actual PPTX; enumerate source slides; create discrepancy table; re-export; verify geometry.",
+      "limitation": "Geometry misses glyph rendering and font fallback; add screenshot review.",
+      "recommendation": "Use focused export-audit ideas",
+      "inspection": "PPTX/HTML fidelity skill read",
+      "source_url": "https://github.com/nexu-io/open-design/blob/main/skills/pptx-html-fidelity-audit/SKILL.md",
+      "license_note": "Apache-2.0 repository metadata; check individual assets",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Compare source HTML with exported PPTX shapes and per-run typography. Review: Extract actual PPTX; enumerate source slides; create discrepancy table; re-export; verify geometry.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides"
+      ],
+      "existing_evidence": "quality-and-export.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Optional editable-alternate fidelity checklist; distinguish image identity checks from native-object typography/geometry checks."
+    },
+    {
+      "repository": "slidevjs/slidev",
+      "category": "Presentations",
+      "kind": "Slide engine",
+      "useful_findings": "Browser slides with developer-friendly authoring and several export routes.",
+      "audit_structure": "Inspect browser output and separately inspect exported deck.",
+      "limitation": "Default PPTX export uses slide images. Current docs also offer editable PPTX with per-element rasterization/fallback.",
+      "recommendation": "Optional interactive-deck engine",
+      "inspection": "README and official exporting docs inspected",
+      "source_url": "https://sli.dev/guide/exporting",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Browser slides with developer-friendly authoring and several export routes. Review: Inspect browser output and separately inspect exported deck.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "interactive-explainers"
+      ],
+      "existing_evidence": "gpt-workflow.md; production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Delivery decision sheet: generated image deck default, authorized web deck alternate, image versus editable export limits and fallback review."
+    },
+    {
+      "repository": "marp-team/marp",
+      "category": "Presentations",
+      "kind": "Markdown slide ecosystem",
+      "useful_findings": "Markdown plus themes and export tooling provides a reproducible slide source.",
+      "audit_structure": "Your own narrative and visual QA remain necessary.",
+      "limitation": "Fast authoring does not establish art direction; distinguish tools and output semantics.",
+      "recommendation": "Optional simpler-deck engine",
+      "inspection": "README screened",
+      "source_url": "https://github.com/marp-team/marp",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Markdown plus themes and export tooling provides a reproducible slide source. Review: Your own narrative and visual QA remain necessary.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides"
+      ],
+      "existing_evidence": "gpt-workflow.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Optional engine matrix for reproducible Markdown talks, source retention and final export QA, with explicit alternate authorization."
+    },
+    {
+      "repository": "hakimel/reveal.js",
+      "category": "Presentations",
+      "kind": "HTML presentation framework",
+      "useful_findings": "Web presentation framework with examples and authoring documentation.",
+      "audit_structure": "Browser interaction and exported-file review need separate checks.",
+      "limitation": "It is an engine, not an editorial skill or native PPTX design system.",
+      "recommendation": "Optional HTML engine",
+      "inspection": "README screened",
+      "source_url": "https://github.com/hakimel/reveal.js",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Web presentation framework with examples and authoring documentation. Review: Browser interaction and exported-file review need separate checks.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "interactive-explainers"
+      ],
+      "existing_evidence": "production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Web deck interaction/delivery checklist with keyboard, navigation, browser runtime and linear PDF fallback."
+    },
+    {
+      "repository": "gitbrent/PptxGenJS",
+      "category": "Presentations",
+      "kind": "PPTX library",
+      "useful_findings": "Create native PowerPoint objects, text, charts, and images from JavaScript.",
+      "audit_structure": "Package, geometry, font, and rendered checks must be supplied by your skill.",
+      "limitation": "A library cannot decide whether a visual communicates the point.",
+      "recommendation": "Core editable-PPTX dependency",
+      "inspection": "README screened",
+      "source_url": "https://github.com/gitbrent/PptxGenJS",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Create native PowerPoint objects, text, charts, and images from JavaScript. Review: Package, geometry, font, and rendered checks must be supplied by your skill.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides"
+      ],
+      "existing_evidence": "quality-and-export.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Editable-output exception template listing why native objects are needed, what remains generated and required font/render checks."
+    },
+    {
+      "repository": "touying-typ/touying",
+      "category": "Presentations",
+      "kind": "Typst slide package",
+      "useful_findings": "Typst themes, overlays, notes, and presentation source.",
+      "audit_structure": "Compile and inspect output; preserve exact technical notation.",
+      "limitation": "More natural for technical/typeset talks than general visual marketing decks.",
+      "recommendation": "Optional technical branch",
+      "inspection": "README screened",
+      "source_url": "https://github.com/touying-typ/touying",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Typst themes, overlays, notes, and presentation source. Review: Compile and inspect output; preserve exact technical notation.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "editorial-pdf"
+      ],
+      "existing_evidence": "production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/editorial-pdf/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Technical talk alternate checklist for exact notation, overlays/notes, typeset-source versus PPTX editability and output rendering."
+    },
+    {
+      "repository": "andreasKroepelin/polylux",
+      "category": "Presentations",
+      "kind": "Typst slide package",
+      "useful_findings": "Minimal source-driven slides, overlays, templates, and presenter support.",
+      "audit_structure": "PDF visual review and timing checks.",
+      "limitation": "PDF/source editability differs from PowerPoint-object editability.",
+      "recommendation": "Optional technical branch",
+      "inspection": "README screened",
+      "source_url": "https://github.com/andreasKroepelin/polylux",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Minimal source-driven slides, overlays, templates, and presenter support. Review: PDF visual review and timing checks.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "editorial-pdf"
+      ],
+      "existing_evidence": "production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/editorial-pdf/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Technical talk alternate checklist with overlays, presenter timing, notes and PDF proof; share the bounded engine matrix rather than install all options."
+    },
+    {
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "category": "Presentations; Posters",
+      "kind": "Scientific skills",
+      "useful_findings": "Choose image slides for concepts; preserve original quantitative figures; use separate text for editable PPTX; poster guidance checks physical output.",
+      "audit_structure": "Visual review, source accuracy, final-size text/DPI, reading order, and print proof.",
+      "limitation": "Scientific workflow includes rigorous approval/security gates that should not become universal creative defaults.",
+      "recommendation": "Strong specialized reference",
+      "inspection": "Scientific slides and poster skills inspected",
+      "source_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-slides/SKILL.md",
+      "license_note": "MIT LICENSE.md inspected; check dependencies/assets separately",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Choose image slides for concepts; preserve original quantitative figures; use separate text for editable PPTX; poster guidance checks physical output. Review: Visual review, source accuracy, final-size text/DPI, reading order, and print proof.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "poster-infographics",
+        "data-storytelling"
+      ],
+      "existing_evidence": "production.md #11; quality-and-export.md; production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/data-storytelling/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/data-storytelling/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Research poster and scientific-deck archetypes with exact results, methods, limitations, units, physical readability and proof requirements."
+    },
+    {
+      "repository": "JimLiu/baoyu-skills",
+      "category": "Presentations; Posters; Imagery",
+      "kind": "Image-led creative skills",
+      "useful_findings": "Outline and style instructions before individual slide images; infographic layout and style are separate choices.",
+      "audit_structure": "Review outline/prompts; save reproducible prompts; regenerate incorrect image text.",
+      "limitation": "Slide-deck skill targets reading/sharing; full-slide images limit editable text and require accuracy checks.",
+      "recommendation": "Strong optional illustrated branch",
+      "inspection": "Slide-deck and infographic skills inspected",
+      "source_url": "https://github.com/JimLiu/baoyu-skills/blob/main/skills/baoyu-slide-deck/SKILL.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Outline and style instructions before individual slide images; infographic layout and style are separate choices. Review: Review outline/prompts; save reproducible prompts; regenerate incorrect image text.",
+      "relevant_existing_skills": [
+        "gpt-poster-slides",
+        "poster-infographics",
+        "visual-assets"
+      ],
+      "existing_evidence": "gpt-workflow.md; art-direction.md; production.md",
+      "relevant_existing_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/visual-assets/references/production.md",
+        "skills/visual-assets/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/visual-assets/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/visual-assets/references/production.md",
+        "skills/visual-assets/references/quality.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/visual-assets/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Reusable full-slide prompt/deck-plan template with source pointer, exact copy, illustration mechanism, invariants, reference roles and QA."
+    },
+    {
+      "repository": "MIT-BECL/Poster_Resources",
+      "category": "Posters",
+      "kind": "Human-authored templates/examples",
+      "useful_findings": "Named contributors; PowerPoint/Illustrator templates, annotated examples, and master-slide guidance.",
+      "audit_structure": "Annotations and real examples provide a human design reference.",
+      "limitation": "Scientific posters are not equivalent to short speaker-led slides; main/templates licenses differ.",
+      "recommendation": "Strong human example source",
+      "inspection": "Repository README and linked guidance read",
+      "source_url": "https://github.com/MIT-BECL/Poster_Resources",
+      "license_note": "Separate License-main and License-Templates; verify each",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Named contributors; PowerPoint/Illustrator templates, annotated examples, and master-slide guidance. Review: Annotations and real examples provide a human design reference.",
+      "relevant_existing_skills": [
+        "poster-infographics",
+        "gpt-poster-slides"
+      ],
+      "existing_evidence": "production.md #2,7-8",
+      "relevant_existing_files": [
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/gpt-poster-slides/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/poster-infographics/references/production.md",
+        "skills/poster-infographics/references/quality.md",
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/poster-infographics/assets/production-template.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Original printed research-poster template plus critique annotations; preserve main-message/evidence balance without copying licensed upstream layouts."
+    },
+    {
+      "repository": "typst/typst",
+      "category": "PDF; Documents",
+      "kind": "Typesetting engine",
+      "useful_findings": "Structured, reproducible typesetting with font discovery and source-based compilation.",
+      "audit_structure": "Compile and inspect pages/fonts and figure placement.",
+      "limitation": "Layout quality and source accuracy still require editorial decisions.",
+      "recommendation": "Strong PDF engine option",
+      "inspection": "README screened",
+      "source_url": "https://github.com/typst/typst",
+      "license_note": "Apache-2.0 repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Structured, reproducible typesetting with font discovery and source-based compilation. Review: Compile and inspect pages/fonts and figure placement.",
+      "relevant_existing_skills": [
+        "editorial-pdf",
+        "word-documents"
+      ],
+      "existing_evidence": "editorial-pdf production.md #4",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/word-documents/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/word-documents/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Editorial engine-selection note and structured report source outline; compile/fonts/figure and exported-page proof checklist."
+    },
+    {
+      "repository": "quarto-dev/quarto-cli",
+      "category": "PDF; Documents; Presentations",
+      "kind": "Publishing engine",
+      "useful_findings": "Scientific/technical publishing across documents and presentations.",
+      "audit_structure": "Choose output-specific rendering and inspect the final artifact.",
+      "limitation": "Its defaults do not ensure a distinctive visual report.",
+      "recommendation": "Optional technical publishing branch",
+      "inspection": "README screened",
+      "source_url": "https://github.com/quarto-dev/quarto-cli",
+      "license_note": "GitHub metadata NOASSERTION; inspect LICENSE and dependencies",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Scientific/technical publishing across documents and presentations. Review: Choose output-specific rendering and inspect the final artifact.",
+      "relevant_existing_skills": [
+        "editorial-pdf",
+        "gpt-poster-slides"
+      ],
+      "existing_evidence": "editorial-pdf production.md #4",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/gpt-poster-slides/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/gpt-poster-slides/references/production.md",
+        "skills/gpt-poster-slides/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/gpt-poster-slides/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Research-report template with citations, calculation source, output-specific layouts and explicit output/export review."
+    },
+    {
+      "repository": "grapeot/docx-skill",
+      "category": "Documents",
+      "kind": "Form-editing workflow scaffold",
+      "useful_findings": "Inspect paragraphs/runs and compare rendered before/after; equal character counts do not preserve visual width.",
+      "audit_structure": "Separate original/output; open/render; compare affected regions.",
+      "limitation": "The file explicitly describes a scaffold and placeholder CLI. It is not a finished general Word editor.",
+      "recommendation": "Use narrow lessons; do not depend on placeholder CLI",
+      "inspection": "docs/skill.md read",
+      "source_url": "https://github.com/grapeot/docx-skill/blob/main/docs/skill.md",
+      "license_note": "License not established in inspected paths",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Inspect paragraphs/runs and compare rendered before/after; equal character counts do not preserve visual width. Review: Separate original/output; open/render; compare affected regions.",
+      "relevant_existing_skills": [
+        "word-documents"
+      ],
+      "existing_evidence": "production.md #1,5,8",
+      "relevant_existing_files": [
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/word-documents/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md",
+        "skills/word-documents/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Existing-form editing template with blank type, exact supplied values, before/after affected-page comparison and field/revision limitations."
+    },
+    {
+      "repository": "Kozea/WeasyPrint",
+      "category": "PDF; Documents",
+      "kind": "HTML/CSS PDF renderer",
+      "useful_findings": "Create print-oriented PDFs from HTML/CSS.",
+      "audit_structure": "Check pagination, tables, fonts, and print output in a separate review layer.",
+      "limitation": "It is a print renderer, not a browser-app or creative-planning skill.",
+      "recommendation": "Strong editorial PDF engine",
+      "inspection": "README screened",
+      "source_url": "https://github.com/Kozea/WeasyPrint",
+      "license_note": "BSD-3-Clause repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Create print-oriented PDFs from HTML/CSS. Review: Check pagination, tables, fonts, and print output in a separate review layer.",
+      "relevant_existing_skills": [
+        "editorial-pdf"
+      ],
+      "existing_evidence": "production.md #4,6-8",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "HTML print handoff/checklist with page grid, headers, tables, footnotes, break controls and renderer-specific limitations."
+    },
+    {
+      "repository": "python-openxml/python-docx",
+      "category": "Documents",
+      "kind": "DOCX library",
+      "useful_findings": "Create and update Word document structures.",
+      "audit_structure": "External Word/LibreOffice rendering is necessary for final layout review.",
+      "limitation": "It does not provide Word layout rendering or a complete editorial workflow.",
+      "recommendation": "Core Word dependency",
+      "inspection": "README screened",
+      "source_url": "https://github.com/python-openxml/python-docx",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Create and update Word document structures. Review: External Word/LibreOffice rendering is necessary for final layout review.",
+      "relevant_existing_skills": [
+        "word-documents"
+      ],
+      "existing_evidence": "production.md #1,3,8",
+      "relevant_existing_files": [
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/word-documents/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/word-documents/references/production.md",
+        "skills/word-documents/references/quality.md",
+        "skills/word-documents/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "DOCX production template for styles, sections, tables, headers/footers and supported renderer; avoid claiming save equals layout QA."
+    },
+    {
+      "repository": "pymupdf/PyMuPDF",
+      "category": "PDF",
+      "kind": "PDF library",
+      "useful_findings": "Read/manipulate/render PDFs; useful as an inspection or extraction component.",
+      "audit_structure": "Verify output visually and check extracted content against source pages.",
+      "limitation": "README presents AGPL/commercial licensing options; do not assume permissive vendoring.",
+      "recommendation": "Optional dependency after license selection",
+      "inspection": "README screened",
+      "source_url": "https://github.com/pymupdf/PyMuPDF",
+      "license_note": "AGPL-3.0 metadata; README describes commercial option",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Read/manipulate/render PDFs; useful as an inspection or extraction component. Review: Verify output visually and check extracted content against source pages.",
+      "relevant_existing_skills": [
+        "editorial-pdf",
+        "creative-director"
+      ],
+      "existing_evidence": "editorial-pdf production.md #8",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Source-ingestion/render-engine matrix with license-fit and page-image/text comparison; don't mandate this particular package."
+    },
+    {
+      "repository": "jsvine/pdfplumber",
+      "category": "PDF",
+      "kind": "PDF extraction/debugging library",
+      "useful_findings": "Character/geometry inspection, table extraction, and visual debugging.",
+      "audit_structure": "Inspect extracted tables and debug overlays against pages.",
+      "limitation": "Works best on machine-generated PDFs; extraction is not OCR or proof of faithful layout.",
+      "recommendation": "Strong source-inspection dependency",
+      "inspection": "README screened",
+      "source_url": "https://github.com/jsvine/pdfplumber",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Character/geometry inspection, table extraction, and visual debugging. Review: Inspect extracted tables and debug overlays against pages.",
+      "relevant_existing_skills": [
+        "editorial-pdf",
+        "creative-director",
+        "data-storytelling"
+      ],
+      "existing_evidence": "editorial-pdf production.md #1,8",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md",
+        "skills/data-storytelling/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md",
+        "skills/data-storytelling/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Machine-generated/scanned/hybrid PDF intake plus table reconstruction record preserving column meaning, units and source page."
+    },
+    {
+      "repository": "pdfme/pdfme",
+      "category": "PDF",
+      "kind": "Template designer/generator",
+      "useful_findings": "Visual template editor, JSON templates, browser/Node generation, and CLI validation.",
+      "audit_structure": "Validate template and inspect generated PDF output.",
+      "limitation": "Good for repeatable structured PDFs; narrative editing and art direction are separate.",
+      "recommendation": "Optional repeatable-template branch",
+      "inspection": "README screened",
+      "source_url": "https://github.com/pdfme/pdfme",
+      "license_note": "MIT repository metadata and README",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Visual template editor, JSON templates, browser/Node generation, and CLI validation. Review: Validate template and inspect generated PDF output.",
+      "relevant_existing_skills": [
+        "editorial-pdf"
+      ],
+      "existing_evidence": "production.md #4",
+      "relevant_existing_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/editorial-pdf/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/editorial-pdf/references/production.md",
+        "skills/editorial-pdf/references/quality.md",
+        "skills/editorial-pdf/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Repeatable structured-document template with field schema, optional/long values, overflow cases, privacy and final PDF proof."
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "category": "Frontend; App UI",
+      "kind": "Design and critique system",
+      "useful_findings": "Separate technical audit, design critique, product context, and final polish; product mode prioritizes familiar task behavior.",
+      "audit_structure": "Five technical dimensions scored 0–4; P0–P3 findings with location, impact, evidence, and fix.",
+      "limitation": "A self-scored 20-point result is not accessibility certification; arbitrary visual bans are contextual.",
+      "recommendation": "Strong critique/audit backbone",
+      "inspection": "README plus audit and operate references read",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
+      "license_note": "Apache-2.0 repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Separate technical audit, design critique, product context, and final polish; product mode prioritizes familiar task behavior. Review: Five technical dimensions scored 0–4; P0–P3 findings with location, impact, evidence, and fix.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces",
+        "creative-director"
+      ],
+      "existing_evidence": "quality.md; production.md",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Five-pass critique template with exact location, user impact, evidence, fix and unrun checks; performance/theming fields when relevant."
+    },
+    {
+      "repository": "Dammyjay93/interface-design",
+      "category": "App UI",
+      "kind": "Product-interface craft skill",
+      "useful_findings": "One focal point, intentional density and tokens, existing primitives, visible state previews, persistent design memory.",
+      "audit_structure": "Domain-specific swap/consistency checks plus desktop/mobile visual inspection.",
+      "limitation": "Explicitly excludes marketing sites. Some standards shorthand needs correction before reuse.",
+      "recommendation": "Strong app-UI backbone",
+      "inspection": "Core skill and README inspected",
+      "source_url": "https://github.com/Dammyjay93/interface-design/blob/main/.claude/skills/interface-design/SKILL.md",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "One focal point, intentional density and tokens, existing primitives, visible state previews, persistent design memory. Review: Domain-specific swap/consistency checks plus desktop/mobile visual inspection.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "brand-identity"
+      ],
+      "existing_evidence": "production.md #2-3,6",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Product brief/state matrix and durable design-token decision ledger with domain intent and representative dense/empty/error specimens."
+    },
+    {
+      "repository": "ibelick/ui-skills",
+      "category": "Frontend; App UI",
+      "kind": "Focused design-engineering skills",
+      "useful_findings": "Baseline UI, accessibility, and motion-performance skills; empty states should offer a next action.",
+      "audit_structure": "Exact snippet, why it matters, minimal fix; priority categories for controls, keyboard, focus, and errors.",
+      "limitation": "Strict Tailwind/font/motion preferences should remain stack/context-specific.",
+      "recommendation": "Strong focused audit modules",
+      "inspection": "Three skill files inspected",
+      "source_url": "https://github.com/ibelick/ui-skills/blob/main/skills/fixing-accessibility/SKILL.md",
+      "license_note": "MIT repository metadata",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Baseline UI, accessibility, and motion-performance skills; empty states should offer a next action. Review: Exact snippet, why it matters, minimal fix; priority categories for controls, keyboard, focus, and errors.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "website-frontends"
+      ],
+      "existing_evidence": "production.md #3-5; quality.md",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Dialog/menu/form audit worksheet including focus entry/exit, accessible names, keyboard actions and error recovery."
+    },
+    {
+      "repository": "emilkowalski/skills",
+      "category": "Frontend; App UI; Motion",
+      "kind": "Designer-authored engineering skills",
+      "useful_findings": "Decide whether motion is needed; retain gesture continuity; origin-aware popovers; review in slow motion/on devices.",
+      "audit_structure": "Concrete before/after code review; animation checklist and gesture testing.",
+      "limitation": "Some absolute performance/motion statements are simplifications; verify target engine and product use.",
+      "recommendation": "Strong motion/craft reference",
+      "inspection": "Design-engineering/animation material inspected",
+      "source_url": "https://github.com/emilkowalski/skills/blob/main/skills/emil-design-eng/SKILL.md",
+      "license_note": "MIT LICENSE inspected; old /skill URL redirects",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Decide whether motion is needed; retain gesture continuity; origin-aware popovers; review in slow motion/on devices. Review: Concrete before/after code review; animation checklist and gesture testing.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "website-frontends",
+        "explainer-video"
+      ],
+      "existing_evidence": "app-interfaces production.md #9",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/explainer-video/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/explainer-video/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Motion decision/review template with trigger, spatial origin, interruption, gesture continuity, reduced-motion alternate and slow playback/device evidence."
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend; App UI",
+      "kind": "Searchable design knowledge skill",
+      "useful_findings": "Detect actual stack; generate and persist a design system; page overrides; prioritize interaction and accessibility.",
+      "audit_structure": "Priority table plus pre-delivery app-UI checks.",
+      "limitation": "Large preset coverage is not evidence that a specific output is good. Avoid unexamined preset selection.",
+      "recommendation": "Useful searchable reference layer",
+      "inspection": "Skill and README excerpts inspected",
+      "source_url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/blob/main/.claude/skills/ui-ux-pro-max/SKILL.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Detect actual stack; generate and persist a design system; page overrides; prioritize interaction and accessibility. Review: Priority table plus pre-delivery app-UI checks.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "brand-identity",
+        "website-frontends"
+      ],
+      "existing_evidence": "app-interfaces production.md #2; brand-identity production.md",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Design-system record with page/screen overrides and rationale; select by real specimens rather than presets."
+    },
+    {
+      "repository": "vercel-labs/agent-skills",
+      "category": "Frontend; App UI",
+      "kind": "Review/performance skills",
+      "useful_findings": "Web review fetches current guidelines and reports file/line findings; React guidance targets performance and composition.",
+      "audit_structure": "Trace findings to code; run meaningful browser and implementation checks.",
+      "limitation": "Guideline pointers can change; this is not a complete art-direction system.",
+      "recommendation": "Strong implementation review supplement",
+      "inspection": "Web-guidelines and React skills inspected",
+      "source_url": "https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md",
+      "license_note": "Root LICENSE path not found; verify notices before copying",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Web review fetches current guidelines and reports file/line findings; React guidance targets performance and composition. Review: Trace findings to code; run meaningful browser and implementation checks.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces"
+      ],
+      "existing_evidence": "website-frontends production.md #9; quality.md",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Implementation audit template including route/render behavior, costly rerenders/data waterfalls when applicable and file/line evidence; no global React mandate."
+    },
+    {
+      "repository": "vercel-labs/web-interface-guidelines",
+      "category": "Frontend; App UI",
+      "kind": "Actual interface review rules",
+      "useful_findings": "Concrete checks for forms, focus, media, content overflow, navigation state, motion, localization, and copy.",
+      "audit_structure": "Report exact file/line violations against the inspected rules.",
+      "limitation": "Contains Vercel house conventions alongside accessibility advice; universalize only source-verified requirements.",
+      "recommendation": "Strong detailed implementation checklist",
+      "inspection": "command.md read",
+      "source_url": "https://github.com/vercel-labs/web-interface-guidelines/blob/main/command.md",
+      "license_note": "Not cleared; inspect exact file/repository license",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Concrete checks for forms, focus, media, content overflow, navigation state, motion, localization, and copy. Review: Report exact file/line violations against the inspected rules.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces"
+      ],
+      "existing_evidence": "production.md; quality.md",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Web acceptance matrix for navigation, focus, validation, media fallback, content overflow, localization and current applicable standards."
+    },
+    {
+      "repository": "referodesign/refero_skill",
+      "category": "Frontend; App UI",
+      "kind": "Research-first design skill",
+      "useful_findings": "Lock one primary reference; assign supporting references bounded roles; record evidence for design decisions.",
+      "audit_structure": "Check preservation of reference traits, token/media roles, and actual flows.",
+      "limitation": "Live reference library requires account/paid access; do not copy screenshots as your product assets.",
+      "recommendation": "Strong research method",
+      "inspection": "Core skill and README inspected",
+      "source_url": "https://github.com/referodesign/refero_skill/blob/master/skills/refero-design/SKILL.md",
+      "license_note": "MIT LICENSE inspected; library content has separate access/rights",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Lock one primary reference; assign supporting references bounded roles; record evidence for design decisions. Review: Check preservation of reference traits, token/media roles, and actual flows.",
+      "relevant_existing_skills": [
+        "brand-identity",
+        "website-frontends",
+        "visual-assets"
+      ],
+      "existing_evidence": "brand-identity production.md #2; visual-assets production.md #3",
+      "relevant_existing_files": [
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/visual-assets/references/production.md",
+        "skills/visual-assets/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/brand-identity/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/visual-assets/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/visual-assets/references/production.md",
+        "skills/visual-assets/references/quality.md",
+        "skills/brand-identity/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/visual-assets/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Reference-role ledger recording primary traits, limited secondary roles, original implementation decisions and accessible reference route."
+    },
+    {
+      "repository": "yuwen-lu/unslop-ui",
+      "category": "Frontend; App UI",
+      "kind": "Anti-default UI checklist",
+      "useful_findings": "Restraint in color, icons, containers, gradients, and animation.",
+      "audit_structure": "Pre-delivery checklist flags recurring generated-design patterns.",
+      "limitation": "Explicitly accepts Inter/system fonts while other sources ban them; use as critique prompts, not global bans.",
+      "recommendation": "Small optional critique module",
+      "inspection": "Core skill inspected",
+      "source_url": "https://github.com/yuwen-lu/unslop-ui/blob/main/SKILL.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Restraint in color, icons, containers, gradients, and animation. Review: Pre-delivery checklist flags recurring generated-design patterns.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces",
+        "brand-identity"
+      ],
+      "existing_evidence": "README.md; brand-identity production.md #5",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Contextual visual critique sheet asking whether each pattern supports hierarchy/content rather than prohibiting it categorically."
+    },
+    {
+      "repository": "iuliandita/skills",
+      "category": "Frontend; App UI; Skill maintenance",
+      "kind": "Personal skill collection",
+      "useful_findings": "Rendered verification, real UI states, and honest reporting of unrun checks; shared evidence-oriented audit format.",
+      "audit_structure": "Self-check contract separates build results from visual observations.",
+      "limitation": "Collection evaluation scores describe specific runs and are not a general quality guarantee.",
+      "recommendation": "Useful reporting/maintenance reference",
+      "inspection": "Frontend skill and README excerpts inspected",
+      "source_url": "https://github.com/iuliandita/skills/blob/main/skills/frontend-design/SKILL.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Rendered verification, real UI states, and honest reporting of unrun checks; shared evidence-oriented audit format. Review: Self-check contract separates build results from visual observations.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces",
+        "creative-director"
+      ],
+      "existing_evidence": "quality.md; START_HERE.md #6",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/creative-director/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "QA evidence template separating build logs, state behavior, visual observations and environmental limitations."
+    },
+    {
+      "repository": "AkyRayy/Frontend-Design-SKILLS-for-AI",
+      "category": "Frontend",
+      "kind": "Modular design guidance",
+      "useful_findings": "Task-specific identity, editorial/UI patterns, typography, imagery, anti-patterns, and pre-ship checklist.",
+      "audit_structure": "Reference modules and worked HTML examples support critique.",
+      "limitation": "Length and stylistic richness do not establish actual production quality; some preview assets are SVG compositions.",
+      "recommendation": "Optional deeper design reference",
+      "inspection": "Core skill and README excerpts inspected",
+      "source_url": "https://github.com/AkyRayy/Frontend-Design-SKILLS-for-AI/blob/main/SKILL.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Task-specific identity, editorial/UI patterns, typography, imagery, anti-patterns, and pre-ship checklist. Review: Reference modules and worked HTML examples support critique.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "brand-identity"
+      ],
+      "existing_evidence": "production.md #2-5; references/example.md",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Landing, editorial, portfolio and product-page archetypes with content requirements, asset strategy and pre-ship review."
+    },
+    {
+      "repository": "shadcn-ui/ui",
+      "category": "Frontend; App UI",
+      "kind": "UI components/source distribution",
+      "useful_findings": "Reusable components and examples for product implementation.",
+      "audit_structure": "Supply interaction, accessibility, and visual checks around your assembled app.",
+      "limitation": "Using default components alone can create a recognizable template look.",
+      "recommendation": "Optional implementation primitive",
+      "inspection": "README screened",
+      "source_url": "https://github.com/shadcn-ui/ui",
+      "license_note": "README states MIT",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Reusable components and examples for product implementation. Review: Supply interaction, accessibility, and visual checks around your assembled app.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "website-frontends"
+      ],
+      "existing_evidence": "app-interfaces production.md #2,4",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Optional component-selection record with stack fit, custom identity, state tests and source/license notes; no mandatory component vendor."
+    },
+    {
+      "repository": "radix-ui/primitives",
+      "category": "Frontend; App UI",
+      "kind": "Accessible UI primitives",
+      "useful_findings": "Headless low-level UI components; customize styling around established behaviors.",
+      "audit_structure": "Exercise actual dialog/menu/focus behavior after composition.",
+      "limitation": "Primitives do not make the final composed app automatically accessible.",
+      "recommendation": "Strong behavior primitive",
+      "inspection": "README screened",
+      "source_url": "https://github.com/radix-ui/primitives",
+      "license_note": "README states MIT",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Headless low-level UI components; customize styling around established behaviors. Review: Exercise actual dialog/menu/focus behavior after composition.",
+      "relevant_existing_skills": [
+        "app-interfaces"
+      ],
+      "existing_evidence": "production.md #4",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Dialog/menu composition checklist covering accessible label, keyboard/focus, portal layering and custom styling behavior."
+    },
+    {
+      "repository": "tailwindlabs/headlessui",
+      "category": "Frontend; App UI",
+      "kind": "Headless UI components",
+      "useful_findings": "Unstyled components aimed at accessible interfaces.",
+      "audit_structure": "Test your styling, labels, focus, and responsive behavior.",
+      "limitation": "Stack fit and final design still need judgment.",
+      "recommendation": "Optional behavior primitive",
+      "inspection": "README screened",
+      "source_url": "https://github.com/tailwindlabs/headlessui",
+      "license_note": "README states MIT",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Unstyled components aimed at accessible interfaces. Review: Test your styling, labels, focus, and responsive behavior.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "website-frontends"
+      ],
+      "existing_evidence": "app-interfaces production.md #4",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Same primitive-choice and composed-control acceptance template; verify final labels/focus/responsive behavior independently."
+    },
+    {
+      "repository": "adobe/react-spectrum",
+      "category": "Frontend; App UI",
+      "kind": "Design system and accessible primitives",
+      "useful_findings": "React Aria/Stately separate behavior and state from visual design; multi-input and internationalization support.",
+      "audit_structure": "Screen-reader/keyboard/touch and state tests after integration.",
+      "limitation": "Choose React Aria for custom identity; Spectrum carries Adobe visual conventions.",
+      "recommendation": "Strong accessible behavior option",
+      "inspection": "README screened",
+      "source_url": "https://github.com/adobe/react-spectrum",
+      "license_note": "Repository page identifies Apache-2.0",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "React Aria/Stately separate behavior and state from visual design; multi-input and internationalization support. Review: Screen-reader/keyboard/touch and state tests after integration.",
+      "relevant_existing_skills": [
+        "app-interfaces"
+      ],
+      "existing_evidence": "production.md #4,7-8",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Accessible component/state template with input methods and localization; distinguish React Aria custom identity from Spectrum visual conventions."
+    },
+    {
+      "repository": "storybookjs/storybook",
+      "category": "Frontend; App UI",
+      "kind": "Component development/testing environment",
+      "useful_findings": "Develop and document component states in isolation.",
+      "audit_structure": "State stories and interaction/visual review complement end-to-end tests.",
+      "limitation": "Screenshots of components alone do not prove a usable complete journey.",
+      "recommendation": "Strong state-review dependency",
+      "inspection": "README screened",
+      "source_url": "https://github.com/storybookjs/storybook",
+      "license_note": "Verify package/file notices before copying",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Develop and document component states in isolation. Review: State stories and interaction/visual review complement end-to-end tests.",
+      "relevant_existing_skills": [
+        "app-interfaces",
+        "brand-identity"
+      ],
+      "existing_evidence": "app-interfaces production.md #3,10",
+      "relevant_existing_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/brand-identity/references/production.md",
+        "skills/brand-identity/references/quality.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "skills/brand-identity/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Component story/state inventory linked to full end-to-end journey evidence; isolated screenshots don't certify the app."
+    },
+    {
+      "repository": "microsoft/playwright",
+      "category": "Frontend; App UI",
+      "kind": "Browser automation/testing",
+      "useful_findings": "Real browser engines support interaction, screenshot, and cross-browser checks.",
+      "audit_structure": "Run core journeys, responsive screenshots, and failures relevant to the change.",
+      "limitation": "Viewport emulation alone does not prove physical touch or assistive-technology behavior.",
+      "recommendation": "Core browser-verification dependency",
+      "inspection": "README screened",
+      "source_url": "https://github.com/microsoft/playwright",
+      "license_note": "Verify package/file license before vendoring",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Real browser engines support interaction, screenshot, and cross-browser checks. Review: Run core journeys, responsive screenshots, and failures relevant to the change.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces"
+      ],
+      "existing_evidence": "website-frontends production.md #9; app-interfaces production.md #10",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Journey checklist with actions/assertions/screenshots, narrow/wide viewport, recovery/reset, cross-browser scope and real-device limits."
+    },
+    {
+      "repository": "dequelabs/axe-core",
+      "category": "Frontend; App UI",
+      "kind": "Accessibility test engine",
+      "useful_findings": "Automated rules for HTML accessibility and multiple WCAG versions/levels.",
+      "audit_structure": "Run after new UI states become exposed; verify findings in context.",
+      "limitation": "Automated results do not cover every accessibility issue.",
+      "recommendation": "Core automated-a11y supplement",
+      "inspection": "README screened",
+      "source_url": "https://github.com/dequelabs/axe-core",
+      "license_note": "Verify LICENSE and rules/package notices",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Automated rules for HTML accessibility and multiple WCAG versions/levels. Review: Run after new UI states become exposed; verify findings in context.",
+      "relevant_existing_skills": [
+        "website-frontends",
+        "app-interfaces"
+      ],
+      "existing_evidence": "website-frontends production.md #9",
+      "relevant_existing_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/app-interfaces/references/production.md",
+        "skills/app-interfaces/references/quality.md",
+        "skills/website-frontends/assets/production-template.md",
+        "skills/app-interfaces/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Accessibility worksheet listing exposed states, automated findings, manual keyboard/semantic checks, tool/version and untested assistive technology."
+    },
+    {
+      "repository": "remotion-dev/skills",
+      "category": "Video; Motion",
+      "kind": "Official video-engine skills",
+      "useful_findings": "Creation, markup, audio, captions, preview, render, and multimedia guidance; duration can follow measured narration.",
+      "audit_structure": "Preview composition and verify render/audio separately.",
+      "limitation": "Current router prefers preview unless export is explicit; Studio editing interactivity is not viewer interaction.",
+      "recommendation": "Strong video implementation backbone",
+      "inspection": "Router and voiceover guide read",
+      "source_url": "https://github.com/remotion-dev/skills/blob/main/skills/remotion-best-practices/remotion-markup/voiceover.md",
+      "license_note": "No license file established in inspected paths; engine has separate terms",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Creation, markup, audio, captions, preview, render, and multimedia guidance; duration can follow measured narration. Review: Preview composition and verify render/audio separately.",
+      "relevant_existing_skills": [
+        "explainer-video",
+        "natural-voiceover"
+      ],
+      "existing_evidence": "explainer-video production.md #2,7-9",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md",
+        "skills/natural-voiceover/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Narration-anchored storyboard with real audio duration, frame rounding, scene regeneration and separate preview/final export status."
+    },
+    {
+      "repository": "remotion-dev/remotion",
+      "category": "Video; Motion",
+      "kind": "React video engine",
+      "useful_findings": "Programmatic videos and browser preview/player infrastructure.",
+      "audit_structure": "Render/still, timing, audio, format, and playback QA must accompany your editorial skill.",
+      "limitation": "Custom engine license; do not describe all uses as unconditionally free.",
+      "recommendation": "Core candidate after license fit",
+      "inspection": "README and LICENSE.md read",
+      "source_url": "https://github.com/remotion-dev/remotion/blob/main/LICENSE.md",
+      "license_note": "Custom Remotion License",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Programmatic videos and browser preview/player infrastructure. Review: Render/still, timing, audio, format, and playback QA must accompany your editorial skill.",
+      "relevant_existing_skills": [
+        "explainer-video",
+        "interactive-explainers"
+      ],
+      "existing_evidence": "explainer-video production.md #9; interactive-explainers production.md #3",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Video engine-selection sheet with runtime, license, assets, audio/render checks and editor interaction versus viewer interaction."
+    },
+    {
+      "repository": "konradre/video-production-skills",
+      "category": "Video; Motion",
+      "kind": "Full production workflow skills",
+      "useful_findings": "Source facts, narration anchors, storyboard, shared style layer, pilot, frame inspection, final-file checks.",
+      "audit_structure": "Explicit done criteria; timing/readability checks; frame-time defects; final audio/format review.",
+      "limitation": "Bash/WSL/render-host assumptions and numerous dependencies; metrics do not prove taste.",
+      "recommendation": "Strong editorial/QC ideas; adapt selectively",
+      "inspection": "Explainer, finishing, audio, and README material inspected",
+      "source_url": "https://github.com/konradre/video-production-skills/blob/main/skills/explainer-video/SKILL.md",
+      "license_note": "MIT LICENSE inspected; external software/services separate",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Source facts, narration anchors, storyboard, shared style layer, pilot, frame inspection, final-file checks. Review: Explicit done criteria; timing/readability checks; frame-time defects; final audio/format review.",
+      "relevant_existing_skills": [
+        "explainer-video",
+        "natural-voiceover"
+      ],
+      "existing_evidence": "explainer-video production.md #1-12",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md",
+        "skills/natural-voiceover/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Reusable video brief, shot/storyboard rows, asset continuity sheet, pilot review and timecoded finishing checklist."
+    },
+    {
+      "repository": "Serennity007/awesome-video-creation",
+      "category": "Video",
+      "kind": "Production guides",
+      "useful_findings": "Script, storyboard, filming, edit, voiceover, and publishing templates.",
+      "audit_structure": "Workflow/pitfall/checklist structure; shot and spoken-copy planning.",
+      "limitation": "Claims of proven workflows were not independently validated; prices/advice can age.",
+      "recommendation": "Supplementary checklist reference",
+      "inspection": "Storyboard/script/edit/voiceover material inspected",
+      "source_url": "https://github.com/Serennity007/awesome-video-creation/blob/main/skills/audio/voiceover-production.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Script, storyboard, filming, edit, voiceover, and publishing templates. Review: Workflow/pitfall/checklist structure; shot and spoken-copy planning.",
+      "relevant_existing_skills": [
+        "explainer-video",
+        "natural-voiceover"
+      ],
+      "existing_evidence": "production.md; references/example.md",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md",
+        "skills/natural-voiceover/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Source-to-explainer and live-action interview/demo variants with shot list, recording directions, pickups and platform export checklist."
+    },
+    {
+      "repository": "Maartenlouis/elevenlabs-remotion-skill",
+      "category": "Video; Voice",
+      "kind": "Voiceover skill",
+      "useful_findings": "Narrator presets, scene regeneration, request stitching, and audio-duration metadata.",
+      "audit_structure": "Timing/silence checks and preview/regenerate loop.",
+      "limitation": "A preset labeled natural is not a listening test; API/model compatibility needs checking.",
+      "recommendation": "Useful voice integration reference",
+      "inspection": "SKILL.md read; root README not found",
+      "source_url": "https://github.com/Maartenlouis/elevenlabs-remotion-skill/blob/main/SKILL.md",
+      "license_note": "MIT LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "creative_rule_or_workflow_reference",
+      "specific_rule_check_or_engine_role": "Narrator presets, scene regeneration, request stitching, and audio-duration metadata. Review: Timing/silence checks and preview/regenerate loop.",
+      "relevant_existing_skills": [
+        "natural-voiceover",
+        "explainer-video"
+      ],
+      "existing_evidence": "natural-voiceover production.md #4-8",
+      "relevant_existing_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": false,
+      "skill_templates": [
+        "skills/natural-voiceover/assets/production-template.md",
+        "skills/explainer-video/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "skills/explainer-video/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Voice audition/pronunciation/segment ledger with difficult sentence, neighboring context, actual duration, listening result and regeneration notes."
+    },
+    {
+      "repository": "ManimCommunity/manim",
+      "category": "Video; Motion",
+      "kind": "Animation engine",
+      "useful_findings": "Programmatic explanatory/math animation with a maintained community ecosystem.",
+      "audit_structure": "Inspect motion and label readability at intended runtime.",
+      "limitation": "More suited to mathematical/technical explainers than general live-action storytelling.",
+      "recommendation": "Optional technical animation engine",
+      "inspection": "README screened",
+      "source_url": "https://github.com/ManimCommunity/manim",
+      "license_note": "Verify current LICENSE; separate from 3b1b video assets",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Programmatic explanatory/math animation with a maintained community ecosystem. Review: Inspect motion and label readability at intended runtime.",
+      "relevant_existing_skills": [
+        "explainer-video",
+        "interactive-explainers"
+      ],
+      "existing_evidence": "explainer-video production.md #9",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Mathematical/technical scene template with equations, invariant objects, narration anchors and label readability; keep engine API variants separate."
+    },
+    {
+      "repository": "Zulko/moviepy",
+      "category": "Video",
+      "kind": "Video-editing library",
+      "useful_findings": "Python-based compositing and editing automation.",
+      "audit_structure": "Check actual frame/audio output and exported metadata.",
+      "limitation": "It supplies editing mechanics, not writing, direction, or natural narration.",
+      "recommendation": "Optional batch-editing engine",
+      "inspection": "README screened",
+      "source_url": "https://github.com/Zulko/moviepy",
+      "license_note": "README states MIT",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Python-based compositing and editing automation. Review: Check actual frame/audio output and exported metadata.",
+      "relevant_existing_skills": [
+        "explainer-video"
+      ],
+      "existing_evidence": "production.md #9,11",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Batch-compositing handoff with frame/audio format, source timing and export verification; do not imply it supplies story or natural narration."
+    },
+    {
+      "repository": "hexgrad/kokoro",
+      "category": "Video; Voice",
+      "kind": "Local/open-weight TTS",
+      "useful_findings": "Compact local narration candidate with published voices and examples.",
+      "audit_structure": "Listen to names, pacing, accent, joins, and technical terms.",
+      "limitation": "Author quality comparisons are claims; no blind listening evaluation was run here.",
+      "recommendation": "Strong local voice candidate",
+      "inspection": "README and Apache license inspected",
+      "source_url": "https://github.com/hexgrad/kokoro",
+      "license_note": "Apache-2.0 repository license; model card describes Apache weights",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Compact local narration candidate with published voices and examples. Review: Listen to names, pacing, accent, joins, and technical terms.",
+      "relevant_existing_skills": [
+        "natural-voiceover"
+      ],
+      "existing_evidence": "production.md #4-10",
+      "relevant_existing_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/natural-voiceover/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Voice candidate matrix with language/accent, pronunciation sample, runtime availability, model/voice terms and actual audition verdict."
+    },
+    {
+      "repository": "fishaudio/fish-speech",
+      "category": "Video; Voice",
+      "kind": "TTS system",
+      "useful_findings": "Alternative speech-generation system with multilingual/expressive focus.",
+      "audit_structure": "Test your language, pronunciation, prosody, and exact-output fidelity.",
+      "limitation": "Current Fish Audio Research License distinguishes research/noncommercial and commercial uses.",
+      "recommendation": "Optional after license and audio evaluation",
+      "inspection": "README and license inspected",
+      "source_url": "https://github.com/fishaudio/fish-speech/blob/main/LICENSE",
+      "license_note": "Custom Fish Audio Research License; commercial use requires separate license",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Alternative speech-generation system with multilingual/expressive focus. Review: Test your language, pronunciation, prosody, and exact-output fidelity.",
+      "relevant_existing_skills": [
+        "natural-voiceover"
+      ],
+      "existing_evidence": "production.md #4,10; SOURCES.md",
+      "relevant_existing_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/natural-voiceover/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Voice route selection template with permitted use/license and direct pronunciation/prosody review; no generic commercially-cleared claim."
+    },
+    {
+      "repository": "resemble-ai/chatterbox",
+      "category": "Video; Voice",
+      "kind": "TTS system",
+      "useful_findings": "Voice-generation family with multilingual and expressive narration options.",
+      "audit_structure": "Listen for repetition, unwanted speech, pronunciation, and voice consistency.",
+      "limitation": "Model/vendor quality claims are not comparative results from this research.",
+      "recommendation": "Useful local voice candidate",
+      "inspection": "README and MIT license inspected",
+      "source_url": "https://github.com/resemble-ai/chatterbox",
+      "license_note": "MIT LICENSE inspected; review model assets separately",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Voice-generation family with multilingual and expressive narration options. Review: Listen for repetition, unwanted speech, pronunciation, and voice consistency.",
+      "relevant_existing_skills": [
+        "natural-voiceover"
+      ],
+      "existing_evidence": "production.md #4-10",
+      "relevant_existing_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/natural-voiceover/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/natural-voiceover/references/production.md",
+        "skills/natural-voiceover/references/quality.md",
+        "skills/natural-voiceover/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Same candidate audition matrix with unwanted words/repetition, consistency, model asset terms and duration verification."
+    },
+    {
+      "repository": "H5P/h5p-interactive-video",
+      "category": "Interactive video",
+      "kind": "Viewer-interaction layer",
+      "useful_findings": "Add questions, popups, links, bookmarks, and adaptive video navigation.",
+      "audit_structure": "Test pause/resume, branching, keyboard operation, captions, and answer feedback.",
+      "limitation": "Requires a web/LMS delivery layer; the MP4 alone does not carry these interactions.",
+      "recommendation": "Strong truly-interactive option",
+      "inspection": "README, library metadata, and official feature page inspected",
+      "source_url": "https://h5p.org/interactive-video",
+      "license_note": "Verify code/content licenses separately; official demo page has content attribution terms",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Add questions, popups, links, bookmarks, and adaptive video navigation. Review: Test pause/resume, branching, keyboard operation, captions, and answer feedback.",
+      "relevant_existing_skills": [
+        "interactive-explainers",
+        "explainer-video"
+      ],
+      "existing_evidence": "interactive-explainers production.md #1-10",
+      "relevant_existing_files": [
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/interactive-explainers/assets/production-template.md",
+        "skills/explainer-video/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "skills/explainer-video/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Branching learning-video graph/template with question, choices, target segments, feedback, re-entry, keyboard and caption/transcript mapping."
+    },
+    {
+      "repository": "3b1b/videos",
+      "category": "Video; Motion",
+      "kind": "Actual creator production source",
+      "useful_findings": "Published 3Blue1Brown scene source and documented checkpoint-based interactive iteration.",
+      "audit_structure": "Iterate a scene fragment, inspect it, and render selected animations.",
+      "limitation": "Uses the 3b1b Manim variant; video source/content is CC BY-NC-SA, unlike the MIT engine.",
+      "recommendation": "Strong human workflow reference",
+      "inspection": "README workflow and linked scene samples inspected",
+      "source_url": "https://github.com/3b1b/videos",
+      "license_note": "README identifies CC BY-NC-SA 4.0",
+      "checked_on": "2026-10-13",
+      "source_role": "creator_practice_reference",
+      "specific_rule_check_or_engine_role": "Published 3Blue1Brown scene source and documented checkpoint-based interactive iteration. Review: Iterate a scene fragment, inspect it, and render selected animations.",
+      "relevant_existing_skills": [
+        "explainer-video",
+        "interactive-explainers"
+      ],
+      "existing_evidence": "explainer-video production.md #8; SOURCES.md",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Original technical scene pilot/checkpoint worksheet emphasizing iterate fragment then full render; cite practice without importing creator assets."
+    },
+    {
+      "repository": "3b1b/manim",
+      "category": "Video; Motion",
+      "kind": "Creator animation engine",
+      "useful_findings": "Precise explanatory animation and interactive workflow used by 3Blue1Brown.",
+      "audit_structure": "Preview scenes before full rendering.",
+      "limitation": "Different APIs/workflow from Manim Community; avoid mixing their instructions.",
+      "recommendation": "Optional creator-workflow engine",
+      "inspection": "README and license inspected",
+      "source_url": "https://github.com/3b1b/manim",
+      "license_note": "MIT LICENSE.md inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Precise explanatory animation and interactive workflow used by 3Blue1Brown. Review: Preview scenes before full rendering.",
+      "relevant_existing_skills": [
+        "explainer-video"
+      ],
+      "existing_evidence": "production.md #9",
+      "relevant_existing_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/explainer-video/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/explainer-video/references/production.md",
+        "skills/explainer-video/references/quality.md",
+        "skills/explainer-video/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Optional technical-animation engine matrix explicitly separating APIs/versions, preview process and exact notation QA."
+    },
+    {
+      "repository": "d3/d3",
+      "category": "Data visualization; Frontend",
+      "kind": "Visualization library",
+      "useful_findings": "Custom data-driven SVG/HTML visualizations and interaction.",
+      "audit_structure": "Validate numbers, units, chart choice, and interaction.",
+      "limitation": "Custom chart flexibility adds engineering cost; not an art-direction skill.",
+      "recommendation": "Optional advanced chart layer",
+      "inspection": "README screened",
+      "source_url": "https://github.com/d3/d3",
+      "license_note": "ISC LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Custom data-driven SVG/HTML visualizations and interaction. Review: Validate numbers, units, chart choice, and interaction.",
+      "relevant_existing_skills": [
+        "data-storytelling",
+        "interactive-explainers",
+        "website-frontends"
+      ],
+      "existing_evidence": "data-storytelling production.md #1-10",
+      "relevant_existing_files": [
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/data-storytelling/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md",
+        "skills/interactive-explainers/references/production.md",
+        "skills/interactive-explainers/references/quality.md",
+        "skills/website-frontends/references/production.md",
+        "skills/website-frontends/references/quality.md",
+        "skills/data-storytelling/assets/production-template.md",
+        "skills/interactive-explainers/assets/production-template.md",
+        "skills/website-frontends/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Custom interactive-chart contract with source schema, transforms, units, state-dependent denominator, keyboard/static table alternative and source notes."
+    },
+    {
+      "repository": "observablehq/plot",
+      "category": "Data visualization",
+      "kind": "Plotting library",
+      "useful_findings": "Declarative charts and exploratory visualization.",
+      "audit_structure": "Validate source data, encoding, labels, scales, and output readability.",
+      "limitation": "A chart engine cannot decide which evidence your story needs.",
+      "recommendation": "Strong simpler chart option",
+      "inspection": "README screened",
+      "source_url": "https://github.com/observablehq/plot",
+      "license_note": "ISC LICENSE inspected",
+      "checked_on": "2026-10-13",
+      "source_role": "optional_engine_or_component",
+      "specific_rule_check_or_engine_role": "Declarative charts and exploratory visualization. Review: Validate source data, encoding, labels, scales, and output readability.",
+      "relevant_existing_skills": [
+        "data-storytelling"
+      ],
+      "existing_evidence": "production.md #1-10",
+      "relevant_existing_files": [
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/data-storytelling/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/data-storytelling/references/production.md",
+        "skills/data-storytelling/references/quality.md",
+        "skills/data-storytelling/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Chart brief/calculation template with time trend, distribution, ranking, composition and relationship variants and exact expected values."
+    },
+    {
+      "repository": "VoltAgent/awesome-agent-skills",
+      "category": "Discovery",
+      "kind": "Skill directory",
+      "useful_findings": "Large cross-domain index for finding upstream skills.",
+      "audit_structure": "Follow original links and inspect source/rights rather than trusting the listing.",
+      "limitation": "A listing is not evidence of quality, originality, or safe execution.",
+      "recommendation": "Discovery only",
+      "inspection": "Index screened",
+      "source_url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "license_note": "Check upstream licenses individually",
+      "checked_on": "2026-10-13",
+      "source_role": "discovery_only",
+      "specific_rule_check_or_engine_role": "Large cross-domain index for finding upstream skills. Review: Follow original links and inspect source/rights rather than trusting the listing.",
+      "relevant_existing_skills": [
+        "creative-director"
+      ],
+      "existing_evidence": "SOURCES.md; research/README.md",
+      "relevant_existing_files": [
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md"
+      ],
+      "reuse_boundary": "Original synthesis and links only; upstream code/assets not imported. Preserve stated license/limitations; optional engines require actual capability and license fit.",
+      "optional_or_reference_only": true,
+      "skill_templates": [
+        "skills/creative-director/assets/production-template.md"
+      ],
+      "integration_files": [
+        "skills/creative-director/references/production.md",
+        "skills/creative-director/references/quality.md",
+        "skills/creative-director/assets/production-template.md",
+        "templates/review-matrix.md",
+        "docs/engine-selection.md"
+      ],
+      "mapping_status": "Traceable original guidance and templates; no upstream implementation import or implied engine execution.",
+      "independent_review_proposed_addition": "Future-source intake record: original repository/file, inspected revision, useful practice, license, import disposition and last check."
+    }
+  ],
+  "integration_status": "All58 sources explicitly mapped; role-based dispositions below distinguish adopted rules, original reusable templates, optional tools and discovery-only entries."
+}

@@ -36,3 +36,8 @@ Read [worked example](references/example.md) when you need a concrete input→de
 ## Completion
 
 The output must be source-faithful, visibly/operably fit for its intended use, and technically usable. Distinguish completed artifact, draft, prototype, and production handoff. Keep internal process/tool metadata out of audience-facing content unless requested.
+
+
+## Reusable production template
+
+Use the local [editable production template](assets/production-template.md) to record the resolved brief, source constraints, structure/states/scenes, exact content, actual QA and handoff. It includes a filled fictional example; adapt it to the live topic. A domain pack is optional context when the full repository is available, not a required external dependency for this installed skill.

@@ -2,6 +2,8 @@
 
 The repo's instructions and helpers are original synthesis. No upstream skill implementation, copyrighted reference deck, video, source artwork, font file or voice model was imported. The broad survey contains **58 distinct repositories** in [sources.csv](research/sources.csv), checked on 13 October 2026.
 
+Read the [complete narrative report](research/full-research-report.md) and [all-58 coverage mapping](research/source-coverage.md) for the full incorporation record. The original CSV is unchanged; the archived narrative has one disclosed local-link adaptation and a historical/overriding-contract note. The [domain packs](domains/README.md), each skill's local production template, and [optional engine-selection guide](docs/engine-selection.md) put the findings into reusable task contexts.
+
 The survey inspected public descriptions and selected skill/reference/license files. It did not run every repository, compare voice quality, or certify universal reliability. Many rows are engine/dependency references rather than executable agent skills. License observations in the survey are not clearance to copy every file in a repository.
 
 | Source | Useful contribution considered | How this repo uses it |

@@ -6,6 +6,10 @@ Read first; the source may already answer these. Ask only what materially change
 - Which real content, features, brand/reference constraints, and existing stack apply?
 - Which pages, forms/integrations, responsive targets, and hosting/delivery outputs are required?
 
+## UI direction choice
+
+For new UI or visual redesign, show three concrete real-content specimens before asking the user to select. Compare actual structure, type hierarchy, imagery and density, not three palette swaps. Preserve precise brand/reference constraints and accepted choices; honor an explicit opt-out or delegated decision. Do not call an ungenerated prompt a screenshot.
+
 ## Decision policy
 
 - Already specified: retain the answer; do not ask again.

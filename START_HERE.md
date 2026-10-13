@@ -10,6 +10,8 @@ Identify the requested artifact, intended audience, main message/action, require
 
 Read first. Ask a small batch, normally no more than three material questions at once. Use the selected skill's intake guide. Offer concise choices when they help, including the tradeoff. Skip what the user already specified. Never turn every reversible layout choice into an approval checkpoint.
 
+**Standing UI preference:** for a new UI artifact or visual redesign, offer three concrete examples/directions so the user can choose before the final UI is settled. Use actual topic/content and materially different layout/type/density—not only theme colors. Preserve a choice already made for follow-ups, and honor an explicit opt-out or request to choose for them. See [UI choice policy](docs/ui-choice-policy.md).
+
 If the user says “choose for me,” choose and state the assumption. Ask before relying on missing factual claims, unspecified real functionality, required external identity/voice/asset rights, or unsupported execution capabilities. Continue independent work while waiting when the host permits it.
 
 ## 3. Route selectively

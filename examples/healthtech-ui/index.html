@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta name="description" content="Morrow Care — an original, interactive patient portal design sample with fictional data.">
+  <title>Morrow Care · Your care, connected</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3Z"/><path d="M9 20v-7h6v7"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H5v18h14V8Z"/><path d="M14 3v6h5M8 13h8m-8 4h5"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="3"/><path d="m15 10 6-3v10l-6-3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-3 2-3 4m0 3h.01"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-11-2-17 3-14 10s15 5 14-10ZM4 20 16 8"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Primary navigation">
+    <a class="brand" href="#overview" aria-label="Morrow Care home"><span class="brand-symbol" aria-hidden="true">✳</span><span>morrow<span class="brand-care">care</span></span></a>
+    <div class="workspace-label">YOUR PERSONAL CARE SPACE</div>
+    <nav class="navigation">
+      <a href="#overview" data-nav="overview"><svg><use href="#i-home"/></svg>Overview<span class="nav-dot"></span></a>
+      <a href="#appointments" data-nav="appointments"><svg><use href="#i-calendar"/></svg>Appointments</a>
+      <a href="#documents" data-nav="documents"><svg><use href="#i-file"/></svg>Documents</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="care-note"><svg><use href="#i-leaf"/></svg><h3>A little less admin.<br>A little more living.</h3><p>Everything for your next visit, in one familiar place.</p></div>
+      <button class="help-button" id="help-open"><svg><use href="#i-help"/></svg>About this demo<svg class="tiny-arrow"><use href="#i-arrow"/></svg></button>
+      <button class="profile" id="profile-open"><span class="avatar patient">AM</span><span><strong>Alex Morgan</strong><small>Personal account</small></span><span class="profile-dots" aria-hidden="true">···</span></button>
+    </div>
+  </aside>
+  <div class="content-shell">
+    <header class="topbar"><div><span class="breadcrumb">Your care space</span><span class="breadcrumb-separator">/</span><span id="page-crumb">Overview</span></div><div class="topbar-meta"><span class="demo-badge"><span></span>Interactive demo</span><span class="today">Tuesday, 13 October 2026</span></div></header>
+    <main id="main" tabindex="-1">
+      <section id="view-overview" class="view" aria-labelledby="overview-heading">
+        <div class="page-heading"><div><p class="eyebrow">A GOOD PLACE TO START</p><h1 id="overview-heading">Good morning, Alex<span class="greeting-dot">.</span></h1><p class="page-subtitle">Your next steps, all in one place. Let’s keep things simple.</p></div><button class="button primary" data-book><svg><use href="#i-plus"/></svg>Book a visit</button></div>
+        <div class="overview-grid">
+          <div class="main-column">
+            <section class="appointment-hero" aria-labelledby="next-heading">
+              <div class="hero-kicker"><span class="status-pill"><span></span>Coming up next</span><span class="hero-label">YOUR NEXT APPOINTMENT</span></div>
+              <div class="hero-body"><div class="hero-copy"><h2 id="next-heading">A conversation.<br>A clearer next step.</h2><p>Your follow-up with Dr. Maya Chen.</p><div class="appointment-details"><span><svg><use href="#i-calendar"/></svg>Thu, 15 Oct</span><span><svg><use href="#i-clock"/></svg>10:30 AM · 25 min</span></div><div class="provider"><span class="avatar doctor">MC</span><span><strong>Dr. Maya Chen</strong><small>Primary care · Video visit</small></span></div></div><div class="hero-art" aria-hidden="true">
+                <svg viewBox="0 0 240 230"><ellipse cx="128" cy="209" rx="85" ry="8" fill="#b1c5b2" opacity=".45"/><path d="M70 208V75q0-10 10-10h91q10 0 10 10v133Z" fill="#f5f8ef"/><path d="M94 73V56h47v17" fill="none" stroke="#758d70" stroke-width="5"/><rect x="107" y="42" width="22" height="26" rx="7" fill="#406451"/><path d="M99 100h56m-56 16h56m-56 16h38" stroke="#b7c9af" stroke-width="5" stroke-linecap="round"/><path d="M48 208c-2-47 16-69 32-77-1 35-8 47-20 54m0-1c-20-1-30-15-30-32 23 4 31 18 30 32" fill="#718f70"/><path d="M192 209c-2-31 5-65 12-86m-11 39c-25-4-28-18-27-35 21 9 28 21 27 35m3-13c21-9 28-27 22-43-20 13-24 25-22 43" fill="#406451"/><circle cx="158" cy="172" r="31" fill="#ead5a3"/><path d="m145 171 9 9 18-20" fill="none" stroke="#406451" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div></div>
+              <div class="hero-footer"><span><svg><use href="#i-video"/></svg>Join details appear here before your visit.</span><button class="button hero-button" data-appointment-detail="a1">View appointment<svg><use href="#i-arrow"/></svg></button></div>
+            </section>
+            <section class="journey-section" aria-labelledby="journey-heading"><div class="section-heading"><div><p class="eyebrow">ONE STEP AT A TIME</p><h2 id="journey-heading">Your care journey</h2></div><span class="subtle-label">October 2026</span></div><ol class="journey-rail"><li class="complete"><span class="step-marker"><svg><use href="#i-check"/></svg></span><span class="step-date">09 OCT</span><strong>First conversation</strong><small>Visit completed</small></li><li class="complete"><span class="step-marker"><svg><use href="#i-check"/></svg></span><span class="step-date">12 OCT</span><strong>Visit notes ready</strong><small>In your documents</small></li><li class="current"><span class="step-marker"><span></span></span><span class="step-date">15 OCT</span><strong>Follow-up together</strong><small>Your next appointment</small></li><li><span class="step-marker"><span></span></span><span class="step-date">AFTER YOUR VISIT</span><strong>Plan the next step</strong><small>With your care team</small></li></ol></section>
+            <section aria-labelledby="documents-heading"><div class="section-heading"><h2 id="documents-heading">Fresh from your care team</h2><a class="text-link" href="#documents">All documents<svg><use href="#i-arrow"/></svg></a></div><div class="document-list" id="recent-documents"></div></section>
+          </div>
+          <aside class="side-column" aria-label="Visit preparation and care team"><section class="prep-card"><span class="paper-tab" aria-hidden="true"></span><p class="eyebrow">FOR YOUR NEXT VISIT</p><h2>Make room for<br>your questions.</h2><p>A good conversation starts with what matters to you.</p><label class="note-label" for="visit-note">Your private visit note</label><textarea id="visit-note" rows="3" placeholder="What would you like to talk about?"></textarea><div class="note-footer"><small id="note-status">Kept only in this demo session</small><button class="text-link" id="save-note">Save note<svg><use href="#i-check"/></svg></button></div></section><section class="team-card"><p class="eyebrow">A FAMILIAR FACE</p><h2>Your care team</h2><div class="team-person"><span class="avatar doctor large">MC</span><strong>Dr. Maya Chen</strong><span>Primary care physician</span></div><div class="team-footnote"><span class="small-dot"></span>Your follow-up is scheduled</div><button class="button secondary full" data-book>Plan another visit<svg><use href="#i-arrow"/></svg></button></section><p class="quiet-note">A fictional care space, thoughtfully made.<br>No real health records are stored here.</p></aside>
+        </div>
+      </section>
+      <section id="view-appointments" class="view" hidden aria-labelledby="appointments-heading"><div class="page-heading"><div><p class="eyebrow">TIME WITH YOUR CARE TEAM</p><h1 id="appointments-heading">Your appointments<span class="greeting-dot">.</span></h1><p class="page-subtitle">A simple view of what’s ahead and where you’ve been.</p></div><button class="button primary" data-book><svg><use href="#i-plus"/></svg>Book a visit</button></div><div class="listing-toolbar"><div class="segmented" role="group" aria-label="Filter appointments"><button data-filter="upcoming" aria-pressed="true">Upcoming</button><button data-filter="past" aria-pressed="false">Past visits</button><button data-filter="all" aria-pressed="false">All</button></div><span class="subtle-label" id="appointment-count"></span></div><div id="appointment-list" class="appointments-list"></div><p class="quiet-note inline-note">All visits and clinicians in this sample are fictional. Booking changes last until you reset or reload the demo.</p></section>
+      <section id="view-documents" class="view" hidden aria-labelledby="all-documents-heading"><div class="page-heading"><div><p class="eyebrow">YOUR CARE, ON PAPER</p><h1 id="all-documents-heading">A little more clarity<span class="greeting-dot">.</span></h1><p class="page-subtitle">Visit summaries and preparation notes, easy to find again.</p></div></div><label class="search-control" for="document-search"><svg><use href="#i-file"/></svg><input id="document-search" type="search" placeholder="Find a document" autocomplete="off"><span>3 documents</span></label><div class="document-list all-documents" id="all-documents"></div><p class="quiet-note inline-note">Documents contain fictional administrative content for this design sample.</p></section>
+      <footer class="page-footer"><span>morrow care <span aria-hidden="true">·</span> Care, with a little more calm.</span><button id="reset-demo">Reset demo</button></footer>
+    </main>
+  </div>
+</div>
+<dialog id="booking-dialog" class="booking-dialog" aria-labelledby="booking-heading"><div class="dialog-top"><span class="eyebrow">MAKE TIME FOR YOURSELF</span><button class="icon-button close-dialog" aria-label="Close booking"><svg><use href="#i-close"/></svg></button></div><div id="booking-content"><h2 id="booking-heading">Let’s find a time.</h2><p class="dialog-intro">Choose a fictional provider and a visit that fits your day.</p><form id="booking-form" novalidate><fieldset><legend>01 <span>Your care professional</span></legend><div class="provider-options"><label class="provider-choice"><input type="radio" name="provider" value="maya" checked><span class="avatar doctor">MC</span><span><strong>Dr. Maya Chen</strong><small>Primary care · 25 min</small></span><span class="radio-indicator"></span></label><label class="provider-choice"><input type="radio" name="provider" value="jordan"><span class="avatar jordan">JL</span><span><strong>Dr. Jordan Lee</strong><small>Primary care · 25 min</small></span><span class="radio-indicator"></span></label></div></fieldset><fieldset><legend>02 <span>Choose a day</span></legend><div class="date-options"><label><input type="radio" name="visit-date" value="2026-10-16"><span>FRI<strong>16</strong><small>October</small></span></label><label><input type="radio" name="visit-date" value="2026-10-19"><span>MON<strong>19</strong><small>October</small></span></label><label><input type="radio" name="visit-date" value="2026-10-21"><span>WED<strong>21</strong><small>October</small></span></label></div><p class="field-error" id="date-error" hidden>Choose a day to continue.</p></fieldset><fieldset><legend>03 <span>A time that works for you</span></legend><div class="time-options"><label><input type="radio" name="visit-time" value="09:00"><span>9:00 AM</span></label><label><input type="radio" name="visit-time" value="11:30"><span>11:30 AM</span></label><label><input type="radio" name="visit-time" value="15:00"><span>3:00 PM</span></label></div><p class="field-error" id="time-error" hidden>Choose an available time.</p></fieldset><div class="booking-summary"><svg><use href="#i-video"/></svg><span>Video visit <small>All times shown in India Standard Time (IST).</small></span></div><p class="form-error" id="booking-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="button secondary close-dialog">Cancel</button><button type="submit" class="button primary" id="booking-submit">Confirm demo visit<svg><use href="#i-arrow"/></svg></button></div><p class="dialog-disclaimer">This creates a sample appointment only.</p></form></div></dialog>
+<dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-heading"><div class="dialog-top"><span class="eyebrow" id="detail-kicker">YOUR CARE SPACE</span><button class="icon-button close-dialog" aria-label="Close detail"><svg><use href="#i-close"/></svg></button></div><div id="detail-content"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

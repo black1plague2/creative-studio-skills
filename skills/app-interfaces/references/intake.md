@@ -6,6 +6,10 @@ Read first; the source may already answer these. Ask only what materially change
 - Is this web, native iOS/Android, cross-platform, or a visual prototype; which existing stack and design system apply?
 - Which data, permissions, navigation, integrations and states must be real?
 
+## UI direction choice
+
+For a new UI or visual redesign, first show three concrete same-content specimens with materially different layout/type/density/imagery. Then ask which direction to use. If the user already selected a direction, preserve it for follow-ups. Honor an explicit opt-out or request to decide for them. A prose list of aesthetic labels is not a rendered specimen; state rendering limits honestly.
+
 ## Decision policy
 
 - Already specified: retain the answer; do not ask again.

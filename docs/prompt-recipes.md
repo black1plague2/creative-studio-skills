@@ -34,6 +34,8 @@ If direct listening is unavailable, mark voice naturalness unreviewed.
 ```text
 Use app-interfaces from this repo. Inspect the attached requirements and
 existing project first. Build the primary task flow in the existing stack.
+First show three concrete UI examples/directions with my actual task
+content so I can choose. Preserve any direction I already accepted.
 Preserve the established brand and component system. Cover loading, empty,
 error, success, keyboard/focus and narrow layouts where relevant.
 Ask only missing facts that change the operation or product requirements.
